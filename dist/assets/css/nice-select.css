@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
@@ -176,6 +178,40 @@
 }
 .nice-select .list {
   color: black;
+}
+
+.filters--top .nice-select {
+  font-size: 14px;
+  padding-left: 15px;
+
+  border: none;
+  background: #e8e8e8;
+  height: 36px;
+  line-height: 36px;
+  min-width: 170px;
+  font-weight: 500;
+}
+.filters--top .nice-select::before {
+  content: "Sort By";
+  margin-right: 10px;
+}
+
+.filters--top .nice-select:after {
+  border: none;
+  background-image: url(../img/best-deals/arrow-down.svg);
+  height: 14px;
+  width: 14px;
+  background-size: 100% 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  right: 20px;
+}
+.filters--top .nice-select .list {
+  min-width: 170px;
+}
+.filters--top .nice-select .current {
+  color: #1ca8cb;
 }
 
 @media (max-width: 1280px) {

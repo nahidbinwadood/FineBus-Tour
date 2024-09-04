@@ -163,11 +163,8 @@ $(document).ready(function () {
         allFilters.classList.remove(
           "opacity-100",
           "xl:max-h-[500px]",
-          "md:px-10",
           "md:py-12",
-          "lg:px-14",
           "lg:py-16",
-          "px-8",
           "py-7",
         );
       } else {
@@ -176,12 +173,9 @@ $(document).ready(function () {
         allFilters.classList.add(
           "opacity-100",
           "xl:max-h-[500px]",
-          "md:px-10",
           "md:py-12",
-          "lg:px-14",
           "lg:py-16",
-          "px-8",
-          "py-7"
+          "py-7",
         );
       }
     });

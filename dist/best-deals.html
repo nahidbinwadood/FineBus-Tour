@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/css/owl.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
   <body class="tracking-tight">
     <!-- Header::Start -->
@@ -49,7 +52,9 @@
               class="text-primary transition duration-300 hover:text-primary"
               >Best Deals</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a
+              href="about-us.html"
+              class="transition duration-300 hover:text-primary"
               >About Us</a
             >
             <a href="#" class="transition duration-300 hover:text-primary"
@@ -802,7 +807,7 @@
       <!-- Trending Section::End -->
 
       <!-- Filter Section::Start -->
-      <section class="container mx-auto">
+      <section class="filters--top container mx-auto">
         <div class="lg:pb-10">
           <!-- Title section::start -->
           <div class="">
@@ -819,6 +824,7 @@
             >
               <!-- Filter::Start -->
               <div
+                id="accordion-btn"
                 class="filter-btn flex cursor-pointer items-center gap-2 rounded bg-[#E8E8E8] px-4 py-2"
               >
                 <div>
@@ -847,7 +853,7 @@
                     />
                   </svg>
                 </div>
-                <p class="filter-text w-[95px]">Hide filters</p>
+                <p class="filter-text w-[95px] text-sm">Hide filters</p>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -871,32 +877,14 @@
               <!-- Filter::End -->
 
               <!-- Sort::Start -->
-              <div
-                class="sort-btn flex cursor-pointer items-center gap-2 rounded bg-[#E8E8E8] px-4 py-2"
-              >
-                <p class="sort-text">
-                  Sort by <span class="text-primary">Discount</span>
-                </p>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                  >
-                    <path
-                      opacity="0.4"
-                      d="M9.02961 6.28268L6.81878 9.22852H3.54628C2.98628 9.22852 2.70628 8.55185 3.10294 8.15518L6.12461 5.13352C6.60878 4.64935 7.39628 4.64935 7.88044 5.13352L9.02961 6.28268Z"
-                      fill="#292D32"
-                    />
-                    <path
-                      d="M10.4535 9.22852H6.81934L9.03017 6.28268L10.9027 8.15518C11.2935 8.55185 11.0135 9.22852 10.4535 9.22852Z"
-                      fill="#292D32"
-                    />
-                  </svg>
-                </div>
-              </div>
+
+              <select class="font-poppins">
+                <option value="Discount" selected>Discount</option>
+                <option value="Price">Price</option>
+                <option value="Location">Location</option>
+                <option value="Date">Date</option>
+              </select>
+
               <!-- Sort::End -->
             </div>
             <!-- Filter and Sort Section::End -->
@@ -905,7 +893,8 @@
 
           <!-- All Filters::Start -->
           <div
-            class="all-filters mt-10 grid translate-y-0 grid-cols-1 gap-8 overflow-hidden bg-[#F3F4F8] px-8 py-7 opacity-100 duration-700 md:grid-cols-2 md:px-10 md:py-12 lg:px-14 lg:py-16 xl:max-h-[500px] xl:grid-cols-4 2xl:grid-cols-5"
+            id="accordion-body"
+            class="all-filters mt-10 grid translate-y-0 grid-cols-1 gap-8 overflow-hidden bg-[#F3F4F8] px-8 py-7 opacity-100 duration-500 md:grid-cols-2 md:px-10 md:py-12 lg:px-14 lg:py-16 xl:h-auto xl:grid-cols-4 2xl:grid-cols-5"
           >
             <!-- Region::Start -->
 
@@ -1035,7 +1024,7 @@
       <!-- Deals Card Section::Start -->
       <section class="container mx-auto">
         <div
-          class="grid grid-cols-1 gap-x-8 gap-y-12 py-10 md:mx-0 md:grid-cols-2 md:py-1 lg:mx-0 lg:grid-cols-4 :pb-20"
+          class="grid grid-cols-1 gap-x-8 gap-y-12 py-10 md:mx-0 md:grid-cols-2 md:py-1 md:pt-10 lg:mx-0 lg:grid-cols-4 xl:pb-20 xl:pt-0"
         >
           <!-- First Row::Start -->
 
