@@ -27,6 +27,7 @@
   background: #1ca8cb;
   border: 1px solid #1ca8cb;
 }
+
 @media (max-width: 768px) {
   .destination--slider .owl-dots .owl-dot {
     height: 12px;

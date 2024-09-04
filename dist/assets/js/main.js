@@ -160,11 +160,29 @@ $(document).ready(function () {
       if (filterText.textContent === "Hide filters") {
         filterText.textContent = "Show Filters";
         allFilters.classList.add("opacity-0", "max-h-0");
-        allFilters.classList.remove("opacity-100", "xl:max-h-[500px]");
+        allFilters.classList.remove(
+          "opacity-100",
+          "xl:max-h-[500px]",
+          "md:px-10",
+          "md:py-12",
+          "lg:px-14",
+          "lg:py-16",
+          "px-8",
+          "py-7",
+        );
       } else {
         filterText.textContent = "Hide filters";
         allFilters.classList.remove("opacity-0", "max-h-0");
-        allFilters.classList.add("opacity-100", "xl:max-h-[500px]");
+        allFilters.classList.add(
+          "opacity-100",
+          "xl:max-h-[500px]",
+          "md:px-10",
+          "md:py-12",
+          "lg:px-14",
+          "lg:py-16",
+          "px-8",
+          "py-7"
+        );
       }
     });
   }

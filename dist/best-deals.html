@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
   </head>
-  <body>
+  <body class="tracking-tight">
     <!-- Header::Start -->
     <header
       class="relative h-full overflow-hidden bg-cover bg-center bg-no-repeat 2xl:h-[60vh]"
@@ -803,7 +803,7 @@
 
       <!-- Filter Section::Start -->
       <section class="container mx-auto">
-        <div class="pb-10">
+        <div class="lg:pb-10">
           <!-- Title section::start -->
           <div class="">
             <h2
@@ -905,7 +905,7 @@
 
           <!-- All Filters::Start -->
           <div
-            class="all-filters mt-16 grid translate-y-0 grid-cols-1 gap-8 bg-[#F3F4F8] px-8 py-7 opacity-100 duration-700 md:grid-cols-2 md:px-10 md:py-12 lg:px-14 lg:py-16 xl:max-h-[500px] xl:grid-cols-4 2xl:grid-cols-5"
+            class="all-filters mt-10 grid translate-y-0 grid-cols-1 gap-8 overflow-hidden bg-[#F3F4F8] px-8 py-7 opacity-100 duration-700 md:grid-cols-2 md:px-10 md:py-12 lg:px-14 lg:py-16 xl:max-h-[500px] xl:grid-cols-4 2xl:grid-cols-5"
           >
             <!-- Region::Start -->
 
@@ -1002,7 +1002,7 @@
               <div>
                 <h4 class="mb-4 text-lg font-medium md:text-xl">Duration</h4>
               </div>
-              <div class="md:textbase space-y-2 text-sm">
+              <div class="md:textbase space-y-2 text-sm md:text-base">
                 <div class="space-x-1">
                   <input type="checkbox" name="7 Days" id="7Days" />
                   <label for="7Days" class="cursor-pointer">7 Days</label>
@@ -1035,7 +1035,7 @@
       <!-- Deals Card Section::Start -->
       <section class="container mx-auto">
         <div
-          class="grid grid-cols-1 gap-x-8 gap-y-12 py-20 md:mx-0 md:grid-cols-2 lg:mx-0 lg:grid-cols-4"
+          class="grid grid-cols-1 gap-x-8 gap-y-12 py-10 md:mx-0 md:grid-cols-2 md:py-1 lg:mx-0 lg:grid-cols-4 :pb-20"
         >
           <!-- First Row::Start -->
 
@@ -3435,7 +3435,7 @@
 
       <!-- Register Section::Start -->
       <section
-        class="h-[600px] bg-cover bg-center"
+        class="h-[300px] bg-cover bg-center md:h-[450px] lg:h-[550px] xl:h-[600px]"
         style="
           background-image: linear-gradient(
               180deg,
@@ -3448,18 +3448,22 @@
         <div
           class="container mx-auto flex h-full w-full flex-col items-center justify-center text-center text-white"
         >
-          <div class="space-y-4 pb-8 ">
-            <h2 class="font-manrope text-2xl md:text-3xl lg:text-4xl font-semibold capitalize">
+          <div class="space-y-4 pb-8">
+            <h2
+              class="font-manrope text-2xl font-semibold capitalize md:text-3xl lg:text-4xl"
+            >
               get up to 100$ for Your first order
             </h2>
-            <p class="font-manrope text-sm md:text-base lg:text-lg font-semibold tracking-wide">
+            <p
+              class="font-manrope text-sm font-semibold tracking-wide md:text-base lg:text-lg"
+            >
               you will also receive exclusive offer and latest travel deals
             </p>
           </div>
-          <div class="rounded-[48px] bg-secondary px-6 py-2 md:px-8 lg:px-10 md:py-3 font-inter cursor-pointer transition duration-500 hover:scale-105 text-sm md:text-base">
-            <a href="#"
-              >Sign Me Up</a
-            >
+          <div
+            class="cursor-pointer rounded-[48px] bg-secondary px-6 py-2 font-inter text-sm transition duration-500 hover:scale-105 md:px-8 md:py-3 md:text-base lg:px-10"
+          >
+            <a href="#">Sign Me Up</a>
           </div>
         </div>
       </section>
