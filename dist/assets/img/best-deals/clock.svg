@@ -1,0 +1,47 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="18" height="18" fill="#131313"/>
+<g id="Development Ready Workspace">
+<path d="M-14401 -3194C-14401 -3195.1 -14400.1 -3196 -14399 -3196H41410C41411.1 -3196 41412 -3195.1 41412 -3194V11673C41412 11674.1 41411.1 11675 41410 11675H-14399C-14400.1 11675 -14401 11674.1 -14401 11673V-3194Z" fill="#404040"/>
+<path d="M-14399 -3195H41410V-3197H-14399V-3195ZM41411 -3194V11673H41413V-3194H41411ZM41410 11674H-14399V11676H41410V11674ZM-14400 11673V-3194H-14402V11673H-14400ZM-14399 11674C-14399.6 11674 -14400 11673.6 -14400 11673H-14402C-14402 11674.7 -14400.7 11676 -14399 11676V11674ZM41411 11673C41411 11673.6 41410.6 11674 41410 11674V11676C41411.7 11676 41413 11674.7 41413 11673H41411ZM41410 -3195C41410.6 -3195 41411 -3194.55 41411 -3194H41413C41413 -3195.66 41411.7 -3197 41410 -3197V-3195ZM-14399 -3197C-14400.7 -3197 -14402 -3195.66 -14402 -3194H-14400C-14400 -3194.55 -14399.6 -3195 -14399 -3195V-3197Z" fill="white" fill-opacity="0.1"/>
+<g id="Best Deals" clip-path="url(#clip0_2_3)">
+<rect width="1920" height="5191" transform="translate(-224 -1170)" fill="white"/>
+<g id="Frame 327">
+<g id="Frame 326">
+<g id="popluar card" filter="url(#filter0_d_2_3)">
+<path d="M-24 -369C-24 -380.046 -15.0457 -389 -4 -389H313C324.046 -389 333 -380.046 333 -369V28C333 39.0457 324.046 48 313 48H-4C-15.0457 48 -24 39.0457 -24 28V-369Z" fill="white"/>
+<g id="Frame 325">
+<g id="Frame 323">
+<g id="vuesax/linear/clock">
+<g id="vuesax/linear/clock_2">
+<g id="clock">
+<path id="Vector" d="M16.5 9C16.5 13.14 13.14 16.5 9 16.5C4.86 16.5 1.5 13.14 1.5 9C1.5 4.86 4.86 1.5 9 1.5C13.14 1.5 16.5 4.86 16.5 9Z" fill="#FF5108" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Vector_2">
+<path d="M11.7827 11.3853L9.45766 9.99781C9.05266 9.75781 8.72266 9.18031 8.72266 8.70781V5.63281" fill="#FF5108"/>
+<path d="M11.7827 11.3853L9.45766 9.99781C9.05266 9.75781 8.72266 9.18031 8.72266 8.70781V5.63281" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_2_3" x="-40" y="-403" width="389" height="469" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_3"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_3" result="shape"/>
+</filter>
+<clipPath id="clip0_2_3">
+<rect width="1920" height="5191" fill="white" transform="translate(-224 -1170)"/>
+</clipPath>
+</defs>
+</svg>

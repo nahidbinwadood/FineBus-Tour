@@ -1,0 +1,35 @@
+/* Destination Slider::End */
+.destination--slider .owl-nav {
+  display: none;
+}
+.destination--slider .owl-dots {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.destination--slider .owl-item,
+.destination--slider .owl-item.active {
+  border-radius: 20px 20px 20px 20px;
+  background: #fff;
+  overflow: hidden;
+}
+.destination--slider .owl-dots .owl-dot {
+  height: 18px;
+  width: 18px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 1px solid #113d48;
+  background: trarensparent;
+}
+.destination--slider .owl-dots .owl-dot.active {
+  background: #1ca8cb;
+  border: 1px solid #1ca8cb;
+}
+@media (max-width: 768px) {
+  .destination--slider .owl-dots .owl-dot {
+    height: 12px;
+    width: 12px;
+  }
+}
