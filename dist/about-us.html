@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
     <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
-  <body class="tracking-tight">
+  <body>
     <!-- Header::Start -->
     <header
       class="relative h-full overflow-hidden bg-cover bg-center bg-no-repeat 2xl:h-[60vh]"
@@ -57,7 +57,9 @@
               class="text-primary transition duration-300 hover:text-primary"
               >About Us</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a
+              href="services.html"
+              class="transition duration-300 hover:text-primary"
               >Services</a
             >
             <a href="#" class="transition duration-300 hover:text-primary"
@@ -78,7 +80,7 @@
               >Cart</a
             >
             <a
-              href=""
+              href="registration.html"
               class="rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105"
             >
               Login
@@ -119,9 +121,9 @@
               <div class="flex flex-col justify-center gap-4">
                 <a href="index.html">Home</a>
                 <a href="destination.html">Destination</a>
-                <a href="best-deals.html" class="text-primary">Best Deals</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
+                <a href="best-deals.html">Best Deals</a>
+                <a href="about-us.html" class="text-primary">About Us</a>
+                <a href="services.html">Services</a>
                 <a href="">Blog</a>
               </div>
 
@@ -176,16 +178,16 @@
     <!-- Header::End -->
 
     <!-- Main Section::Start -->
-    <main>
+    <main class="overflow-x-hidden">
       <!-- Trip Plan Section::Start -->
       <section class="bg-primarybgColor py-14 xl:py-28">
         <div
-          class="container mx-auto flex flex-col items-center gap-24 xl:flex-row"
+          class="container mx-auto flex flex-col items-center gap-12 xl:flex-row xl:gap-24"
         >
           <!-- Image Section::Start -->
 
-          <div class="relative flex flex-col gap-5 xl:w-1/2">
-            <div class="h-[405px] w-[400px]">
+          <div class="relative grid grid-cols-1 gap-5 xl:w-1/2">
+            <div class="h-[300px] xl:h-[405px] xl:w-[400px]">
               <img
                 class="h-full w-full rounded-xl border-[6px] border-white object-cover"
                 src="./assets/img/about-us/banner-1.png"
@@ -193,14 +195,16 @@
               />
             </div>
 
-            <div class="absolute -right-12 top-52 z-10 h-[405px] w-[400px]">
+            <div
+              class="h-[300px] xl:absolute xl:-right-12 xl:top-52 xl:z-10 xl:h-[405px] xl:w-[400px]"
+            >
               <img
                 class="h-full w-full rounded-xl border-[6px] border-white object-cover"
                 src="./assets/img/about-us/banner-2.png"
                 alt=""
               />
             </div>
-            <div class="z-20 h-[405px] w-[400px]">
+            <div class="h-[300px] xl:z-20 xl:h-[405px] xl:w-[400px]">
               <img
                 class="h-full w-full rounded-xl border-[6px] border-white object-cover"
                 src="./assets/img/about-us/banner-3.png"
@@ -319,8 +323,12 @@
       <section class="container mx-auto my-20">
         <!-- Title Section::Start -->
         <div class="space-y-3 text-center text-textColor">
-          <h2 class="font-arizonia text-4xl">Services We Offer</h2>
-          <h2 class="font-poppins text-4xl font-semibold">
+          <h2 class="font-arizonia text-2xl md:text-3xl lg:text-4xl">
+            Services We Offer
+          </h2>
+          <h2
+            class="font-poppins text-2xl font-semibold md:text-3xl lg:text-4xl"
+          >
             Our Amazing Services
           </h2>
         </div>
@@ -328,13 +336,13 @@
 
         <!-- Card Section::Start -->
         <div
-          class="grid grid-cols-1 pt-12 md:mx-0 md:grid-cols-2 lg:mx-0 lg:grid-cols-4 gap-8"
+          class="grid grid-cols-1 gap-8 pt-12 md:mx-0 md:grid-cols-2 lg:mx-0 lg:grid-cols-4"
         >
           <a
             href="#"
-            class=" overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px]">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-1.png"
@@ -344,14 +352,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Photo Shoot</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -364,12 +372,11 @@
             <!-- Info::End -->
           </a>
 
-
-           <a
+          <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-2.png"
@@ -379,14 +386,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Tour Guide</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -401,9 +408,9 @@
 
           <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-3.png"
@@ -413,14 +420,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Crazy Event</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -435,9 +442,9 @@
 
           <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-4.png"
@@ -447,14 +454,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Interesting Rest</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -469,9 +476,9 @@
 
           <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-5.png"
@@ -481,14 +488,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Kayaking</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -503,9 +510,9 @@
 
           <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-6.png"
@@ -515,14 +522,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Safe flight</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="md:py-3font-poppins flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 text-primary transition duration-300 hover:scale-105 md:px-5"
                 >
                   View All
                   <span
@@ -535,12 +542,11 @@
             <!-- Info::End -->
           </a>
 
-
           <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-7.png"
@@ -550,14 +556,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Entertainment</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -572,9 +578,9 @@
 
           <a
             href="#"
-            class="overflow-hidden rounded-2xl bg-primarybgColor"
+            class="overflow-hidden rounded-2xl bg-primarybgColor transition-transform duration-500 hover:-translate-y-4"
           >
-            <div class="h-[325px] w-[360px] ">
+            <div class="w-full md:h-[300px]">
               <img
                 class="h-full w-full rounded-2xl object-cover"
                 src="./assets/img/about-us/cards/image-8.png"
@@ -584,14 +590,14 @@
 
             <!-- Info::Start -->
 
-            <div class="pb-10 pt-5 text-center">
+            <div class="pb-10 pt-6 text-center">
               <div class="space-y-2 font-poppins">
                 <h5 class="text-lg font-semibold">Delicious Food</h5>
                 <h5 class="text-[#727272]">10 Listing</h5>
               </div>
-              <div class="flex w-full items-center justify-center pt-5">
+              <div class="flex w-full items-center justify-center pt-8">
                 <div
-                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-5 py-3 font-poppins text-primary transition duration-300 hover:scale-105"
+                  class="flex items-center justify-center gap-3 rounded-[40px] border border-primary px-4 py-2 font-poppins text-primary transition duration-300 hover:scale-105 md:px-5 md:py-3"
                 >
                   View All
                   <span
@@ -607,15 +613,788 @@
         <!-- Card Section::End -->
       </section>
       <!-- Amazing Services Section::End -->
+
+      <!-- Service Section::Start -->
+      <section
+        class="container mx-auto bg-primarybgColor py-12 md:py-16 lg:py-20 xl:h-[60vh] xl:py-24 2xl:h-[50vh]"
+      >
+        <!-- Title Section::Start -->
+        <div class="space-y-3 text-center text-textColor">
+          <h2 class="font-arizonia text-2xl md:text-3xl lg:text-4xl">
+            Meet with Guide
+          </h2>
+          <h2
+            class="font-poppins text-2xl font-semibold md:text-3xl lg:text-4xl"
+          >
+            Our Amazing Services
+          </h2>
+        </div>
+        <!-- Title Section::End -->
+      </section>
+
+      <!-- Service Card Section::Start -->
+      <section
+        class="container mx-auto mb-12 mt-6 grid grid-cols-1 gap-12 md:mb-20 lg:mb-24 xl:-mt-[220px] xl:mb-32 xl:grid-cols-3 xl:px-12"
+      >
+        <!-- Card-1::Start -->
+
+        <div class="relative overflow-hidden rounded-lg bg-primarybgColor">
+          <!-- Bg-image Section Section::Start -->
+
+          <div class="h-[150px] w-full rounded-t-lg md:h-[200px] xl:h-[220px]">
+            <img
+              class="h-full w-full rounded-t-lg object-cover"
+              src="./assets/img/about-us/review-bg.png"
+              alt=""
+            />
+          </div>
+          <!-- Bg-image Section Section::End -->
+
+          <!-- Profile Image Section::Start -->
+          <div
+            class="absolute top-24 flex w-full items-center justify-center md:top-28 xl:top-32"
+          >
+            <img
+              class="size-24 rounded-full border-2 border-white object-cover md:size-36 xl:size-44 2xl:size-52"
+              src="./assets/img/about-us/person-1.png"
+              alt=""
+            />
+          </div>
+          <!-- Profile Image Section::End -->
+
+          <!-- Information Section::Start -->
+          <div
+            class="xl:mb-1z mx-6 mb-12 mt-16 rounded-lg bg-white text-center md:mt-20 xl:mt-28 2xl:mt-36"
+          >
+            <div class="space-y-1 py-5 font-poppins xl:py-10">
+              <h2 class="font-semibold md:text-lg">ALex Paluk</h2>
+              <h2 class="text-sm text-[#727272]">Tourist Guide</h2>
+
+              <!-- Social Icons::Start -->
+              <div class="ml-2 flex w-full items-center justify-center pt-2">
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="13"
+                      viewBox="0 0 9 13"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4875)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M4.72211 12.0368H2.81673C2.49848 12.0368 2.23958 11.778 2.23958 11.4597V7.16201H1.12794C0.809659 7.16201 0.550781 6.90301 0.550781 6.58483V4.74326C0.550781 4.42499 0.809659 4.16611 1.12794 4.16611H2.23958V3.24391C2.23958 2.32951 2.52669 1.55158 3.0698 0.994294C3.61537 0.434499 4.37781 0.138672 5.27468 0.138672L6.72779 0.141042C7.04551 0.141577 7.30397 0.400478 7.30397 0.718173V2.42805C7.30397 2.7463 7.04516 3.0052 6.72697 3.0052L5.74861 3.00555C5.45022 3.00555 5.37423 3.06536 5.35799 3.0837C5.33122 3.11414 5.29936 3.20008 5.29936 3.43746V4.16604H6.65347C6.75539 4.16604 6.85416 4.19118 6.93903 4.23854C7.12215 4.34086 7.23597 4.5343 7.23597 4.74335L7.23525 6.58494C7.23525 6.90301 6.97635 7.16191 6.65809 7.16191H5.29933V11.4597C5.29936 11.778 5.04039 12.0368 4.72211 12.0368ZM2.93708 11.3393H4.60173V6.84975C4.60173 6.63725 4.77468 6.46441 4.98708 6.46441H6.53772L6.53835 4.86366H4.98698C4.77458 4.86366 4.60173 4.69083 4.60173 4.47832V3.43748C4.60173 3.16499 4.62944 2.85508 4.83512 2.62213C5.08368 2.34055 5.47537 2.30807 5.74842 2.30807L6.60644 2.30769V0.838363L5.27412 0.836202C3.83277 0.836202 2.93711 1.75884 2.93711 3.24393V4.4783C2.93711 4.6907 2.76426 4.86364 2.55183 4.86364H1.24831V6.46438H2.55183C2.76426 6.46438 2.93711 6.63723 2.93711 6.84973L2.93708 11.3393Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4875">
+                          <rect
+                            width="8.32872"
+                            height="11.8982"
+                            fill="white"
+                            transform="translate(0.519531 0.138672)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4887)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M0.502138 8.71692C1.49358 9.34365 2.64307 9.67491 3.81598 9.6719C5.54869 9.6719 7.13648 9.0063 8.28733 7.79784C9.38855 6.64123 9.99433 5.08711 9.96419 3.50995C10.3816 3.15278 10.8726 2.47078 10.8726 1.80606C10.8727 1.74748 10.8572 1.68994 10.8279 1.63926C10.7985 1.58858 10.7563 1.54656 10.7054 1.51746C10.6546 1.48835 10.597 1.4732 10.5384 1.47353C10.4798 1.47386 10.4224 1.48967 10.3719 1.51934C9.9797 1.74978 9.62208 1.81005 9.25427 1.70679C8.50314 0.974717 7.38508 0.820502 6.44295 1.32835C5.61959 1.77149 5.16182 2.58245 5.20303 3.46874C3.80681 3.29842 2.52869 2.60029 1.63083 1.51757C1.59674 1.47632 1.55318 1.44391 1.50388 1.4231C1.45457 1.40229 1.40097 1.3937 1.34763 1.39805C1.29429 1.4024 1.24278 1.41957 1.1975 1.44809C1.15222 1.47661 1.11449 1.51565 1.08753 1.56188C0.65591 2.30105 0.660341 3.15765 1.03569 3.84941C0.954384 3.86293 0.880588 3.90505 0.827609 3.96819C0.77463 4.03133 0.745955 4.11131 0.746755 4.19373C0.747886 4.53014 0.821411 4.86237 0.962336 5.16785C1.10326 5.47332 1.30828 5.74489 1.56347 5.9641C1.51818 6.00757 1.48614 6.063 1.47108 6.12394C1.45602 6.18489 1.45856 6.24886 1.47839 6.30842C1.58688 6.63208 1.76357 6.92869 1.99651 7.17821C2.22944 7.42774 2.51322 7.62438 2.82865 7.75485C2.17307 8.06763 1.44269 8.18956 0.721052 8.10671C0.373626 8.05974 0.202128 8.52681 0.502138 8.71692ZM3.90683 7.86874C4.15543 7.67774 4.02338 7.2798 3.7114 7.27315C3.44536 7.26751 3.18418 7.20071 2.94811 7.07791C2.71204 6.9551 2.5074 6.77961 2.35006 6.565C2.50333 6.5557 2.65532 6.53136 2.80384 6.49233C3.14107 6.40104 3.12512 5.91447 2.78257 5.84578C2.48286 5.78579 2.20476 5.64638 1.97737 5.44214C1.74997 5.23789 1.58162 4.97631 1.48991 4.68474C1.65698 4.72595 1.82714 4.74899 1.99687 4.75209C2.33322 4.75387 2.4604 4.32269 2.18609 4.14232C1.5679 3.73507 1.30423 3.01585 1.47883 2.33961C2.56647 3.43956 4.02712 4.09153 5.57217 4.1667C5.62345 4.16925 5.67463 4.15988 5.72168 4.13931C5.76872 4.11874 5.81036 4.08753 5.8433 4.04814C5.87624 4.00876 5.8996 3.96227 5.91153 3.91233C5.92346 3.86238 5.92365 3.81036 5.91206 3.76033C5.70157 2.84789 6.21119 2.20844 6.75847 1.91374C7.3 1.62127 8.16945 1.52998 8.83594 2.22926C9.03403 2.43798 9.70229 2.44596 10.0422 2.36664C9.88974 2.6538 9.65532 2.92633 9.43596 3.07966C9.38994 3.11188 9.35283 3.15524 9.32811 3.20569C9.30339 3.25614 9.29186 3.31203 9.2946 3.36815C9.36594 4.82388 8.82353 6.2712 7.80651 7.33874C6.78196 8.41425 5.36522 9.00674 3.81643 9.00674C3.20045 9.00674 2.59645 8.90659 2.02567 8.71338C2.70812 8.58132 3.35644 8.29239 3.90683 7.86874Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4887">
+                          <rect
+                            width="10.6355"
+                            height="10.6355"
+                            fill="white"
+                            transform="translate(0.300781 0.0332031)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4914)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M2.6126 9.79627H0.00390625V3.0572H2.6126V9.79627ZM0.438661 9.36152H2.17785V3.49196H0.438661V9.36152ZM10.0039 9.79627H7.39523V6.10065C7.39523 5.74049 7.10322 5.44848 6.74306 5.44848C6.38281 5.44848 6.09089 5.74049 6.09089 6.10065V9.79627H3.48219V3.0572H6.09089V3.49467C6.48464 3.20998 6.95822 3.05689 7.44411 3.0572C8.85443 3.0572 10.0039 4.20122 10.0039 5.60883V9.79627ZM7.82999 9.36152H9.56909V5.60881C9.56616 4.43775 8.61518 3.49045 7.44411 3.49196C6.90881 3.49196 6.40607 3.71749 6.03109 4.1251L5.65605 4.53543V3.49196H3.91695V9.36152H5.65605V6.10065C5.65605 5.5003 6.14271 5.01372 6.74306 5.01372C7.34332 5.01372 7.82999 5.5003 7.82999 6.10065V9.36152ZM1.30825 2.62237C0.587846 2.62237 0.00390625 2.03843 0.00390625 1.31802C0.00390625 0.597693 0.587846 0.0136719 1.30825 0.0136719C2.02866 0.0136719 2.6126 0.597693 2.6126 1.31802C2.61109 2.03777 2.02801 2.62094 1.30825 2.62237ZM1.30825 0.448508C0.828029 0.448508 0.438661 0.837815 0.438661 1.31802C0.438661 1.7983 0.828029 2.18761 1.30825 2.18761C1.78848 2.18761 2.17785 1.7983 2.17785 1.31802C2.17785 0.837815 1.78846 0.448508 1.30825 0.448508Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4914">
+                          <rect
+                            width="10"
+                            height="10"
+                            fill="white"
+                            transform="translate(0.00390625)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4922)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M4.50456 2.18945C4.20129 2.1894 3.90099 2.2491 3.62079 2.36513C3.3406 2.48117 3.08601 2.65126 2.87157 2.86571C2.65712 3.08015 2.48703 3.33474 2.37099 3.61493C2.25496 3.89513 2.19526 4.19543 2.19531 4.4987C2.19526 4.80197 2.25496 5.10228 2.37099 5.38247C2.48703 5.66267 2.65712 5.91726 2.87157 6.1317C3.08601 6.34614 3.3406 6.51624 3.62079 6.63227C3.90099 6.74831 4.20129 6.808 4.50456 6.80795C4.80783 6.808 5.10814 6.74831 5.38833 6.63227C5.66853 6.51624 5.92312 6.34614 6.13756 6.1317C6.352 5.91726 6.5221 5.66267 6.63813 5.38247C6.75417 5.10228 6.81386 4.80197 6.81381 4.4987C6.81386 4.19543 6.75417 3.89513 6.63813 3.61493C6.5221 3.33474 6.352 3.08015 6.13756 2.86571C5.92312 2.65126 5.66853 2.48117 5.38833 2.36513C5.10814 2.2491 4.80783 2.1894 4.50456 2.18945ZM4.50456 5.99758C4.20822 5.9975 3.91855 5.90956 3.67218 5.74488C3.42581 5.58019 3.2338 5.34616 3.12043 5.07236C3.00706 4.79856 2.97742 4.49729 3.03525 4.20664C3.09308 3.916 3.23579 3.64902 3.44534 3.43948C3.65488 3.22993 3.92186 3.08722 4.2125 3.02939C4.50315 2.97156 4.80442 3.0012 5.07822 3.11457C5.35202 3.22794 5.58605 3.41995 5.75074 3.66632C5.91542 3.91269 6.00336 4.20236 6.00344 4.4987C6.00354 4.69557 5.96483 4.89052 5.88954 5.07241C5.81425 5.25431 5.70385 5.41958 5.56465 5.55879C5.42544 5.69799 5.26017 5.80839 5.07827 5.88368C4.89638 5.95897 4.70143 5.99768 4.50456 5.99758Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M6.35559 0.02827C5.52759 -0.010355 3.47671 -0.00848 2.64796 0.02827C1.91971 0.062395 1.27734 0.23827 0.75946 0.756145C-0.10604 1.62164 0.00458522 2.7879 0.00458522 4.49827C0.00458522 6.24877 -0.0929148 7.38802 0.75946 8.24039C1.62834 9.10889 2.81146 8.99527 4.50159 8.99527C6.23559 8.99527 6.83408 8.99639 7.44721 8.75902C8.28084 8.43539 8.91008 7.69027 8.97159 6.35189C9.01058 5.52352 9.00834 3.47302 8.97159 2.64427C8.89734 1.0644 8.04946 0.10627 6.35559 0.02827ZM7.66621 7.66777C7.09884 8.23514 6.31171 8.18452 4.49071 8.18452C2.61571 8.18452 1.86384 8.21227 1.31521 7.66214C0.683335 7.03327 0.79771 6.0234 0.79771 4.49227C0.79771 2.42039 0.585085 0.92827 2.66446 0.82177C3.14221 0.804895 3.28284 0.79927 4.48546 0.79927L4.50234 0.81052C6.50071 0.81052 8.06859 0.60127 8.16271 2.68027C8.18408 3.15464 8.18896 3.29715 8.18896 4.4979C8.18859 6.35114 8.22383 7.10752 7.66621 7.66777Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          d="M6.90291 2.63784C7.20093 2.63784 7.44253 2.39625 7.44253 2.09822C7.44253 1.80019 7.20093 1.55859 6.90291 1.55859C6.60488 1.55859 6.36328 1.80019 6.36328 2.09822C6.36328 2.39625 6.60488 2.63784 6.90291 2.63784Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4922">
+                          <rect width="9" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="7"
+                      viewBox="0 0 9 7"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4931)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M5.83218 2.98227L3.86028 1.90335C3.7469 1.84131 3.61289 1.84362 3.50175 1.90947C3.39055 1.97538 3.32422 2.09183 3.32422 2.22108V4.36042C3.32422 4.48906 3.39015 4.6053 3.5006 4.67128C3.55827 4.70573 3.62222 4.72304 3.6863 4.72304C3.74626 4.72295 3.80526 4.70795 3.85798 4.67939L5.82993 3.61906C5.88737 3.58818 5.93541 3.54236 5.96897 3.48645C6.00253 3.43053 6.02036 3.36659 6.02059 3.30138C6.02086 3.23614 6.00349 3.17205 5.97032 3.11588C5.93716 3.05971 5.88942 3.01354 5.83218 2.98227ZM3.84727 4.09129V2.49239L5.32105 3.29878L3.84727 4.09129Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M8.85603 1.59655L8.85563 1.59247C8.84806 1.52063 8.77282 0.881611 8.46217 0.556577C8.10309 0.174276 7.69598 0.127835 7.50021 0.105573C7.48541 0.103941 7.47064 0.102168 7.45588 0.100256L7.44027 0.098635C6.26032 0.0128309 4.47829 0.00111602 4.46045 0.00104629L4.45889 0.000976562L4.45732 0.00104629C4.43948 0.00111602 2.65745 0.0128309 1.46685 0.098635L1.45112 0.100256C1.43845 0.101965 1.42448 0.103534 1.4093 0.105312C1.21578 0.127626 0.813046 0.174154 0.452955 0.570261C0.157068 0.891827 0.0715428 1.51716 0.0627567 1.58743L0.0617456 1.59655C0.0590784 1.62644 -0.00390625 2.33814 -0.00390625 3.0526V3.72049C-0.00390625 4.43497 0.0590784 5.14665 0.0617456 5.17661L0.0622163 5.18109C0.0697821 5.25178 0.144952 5.8791 0.454175 6.20426C0.791813 6.57375 1.21871 6.62264 1.44833 6.64893C1.48463 6.65308 1.51588 6.65662 1.53719 6.66037L1.55783 6.66323C2.23913 6.72806 4.37526 6.75998 4.46582 6.76129L4.46856 6.76136L4.47128 6.76129C4.48911 6.76122 6.27108 6.7495 7.45107 6.6637L7.46665 6.66208C7.48157 6.66009 7.49833 6.65833 7.5167 6.65641C7.70916 6.63598 8.10969 6.59357 8.46482 6.20281C8.7607 5.88121 8.8463 5.25586 8.85501 5.18566L8.85603 5.17654C8.85869 5.14658 8.92175 4.43495 8.92175 3.72049V3.0526C8.92168 2.33812 8.85869 1.62651 8.85603 1.59655ZM8.39862 3.72049C8.39862 4.38178 8.34089 5.06281 8.33543 5.12533C8.31324 5.29756 8.22299 5.69318 8.07884 5.84988C7.85657 6.09441 7.62825 6.11866 7.46154 6.1363C7.44296 6.13821 7.42439 6.1403 7.40585 6.14256C6.26454 6.22509 4.5498 6.23775 4.47081 6.23823C4.38222 6.23694 2.27733 6.20473 1.6168 6.14338C1.58295 6.13786 1.54637 6.13364 1.50785 6.12928C1.31234 6.10688 1.04471 6.07623 0.838934 5.84988L0.834088 5.84471C0.692446 5.69714 0.604812 5.32716 0.582532 5.12737C0.578384 5.08012 0.519147 4.39104 0.519147 3.72049V3.0526C0.519147 2.39207 0.576762 1.71178 0.582341 1.64797C0.608839 1.44511 0.700762 1.07344 0.838934 0.923206C1.068 0.67125 1.30955 0.64334 1.4693 0.624878C1.48456 0.6231 1.49878 0.621479 1.51193 0.619771C2.66985 0.536825 4.39691 0.5245 4.45889 0.52403C4.52086 0.524431 6.24731 0.536825 7.39495 0.619771C7.40904 0.621549 7.42443 0.623309 7.44097 0.625227C7.60529 0.64395 7.85364 0.672278 8.08157 0.915378L8.08367 0.917627C8.22532 1.0652 8.31296 1.44164 8.33522 1.64545C8.33918 1.69006 8.39862 2.38062 8.39862 3.0526V3.72049Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4931">
+                          <rect width="8.92562" height="6.75" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Social Icons::End -->
+            </div>
+          </div>
+          <!-- Information Section::End -->
+        </div>
+
+        <!-- Card-1::End -->
+
+        <!-- Card-2::Start -->
+        <div class="relative overflow-hidden rounded-lg bg-primarybgColor">
+          <!-- Bg-image Section Section::Start -->
+
+          <div class="h-[150px] w-full rounded-t-lg md:h-[200px] xl:h-[220px]">
+            <img
+              class="h-full w-full rounded-t-lg object-cover"
+              src="./assets/img/about-us/review-bg.png"
+              alt=""
+            />
+          </div>
+          <!-- Bg-image Section Section::End -->
+
+          <!-- Profile Image Section::Start -->
+          <div
+            class="absolute top-24 flex w-full items-center justify-center md:top-28 xl:top-32"
+          >
+            <img
+              class="size-24 rounded-full border-2 border-white object-cover md:size-36 xl:size-44 2xl:size-52"
+              src="./assets/img/about-us/person-2.png"
+              alt=""
+            />
+          </div>
+          <!-- Profile Image Section::End -->
+
+          <!-- Information Section::Start -->
+          <div
+            class="xl:mb-1z mx-6 mb-12 mt-16 rounded-lg bg-white text-center md:mt-20 xl:mt-28 2xl:mt-36"
+          >
+            <div class="space-y-1 py-5 font-poppins xl:py-10">
+              <h2 class="font-semibold md:text-lg">ALex Paluk</h2>
+              <h2 class="text-sm text-[#727272]">Tourist Guide</h2>
+
+              <!-- Social Icons::Start -->
+              <div class="ml-2 flex w-full items-center justify-center pt-2">
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="13"
+                      viewBox="0 0 9 13"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4875)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M4.72211 12.0368H2.81673C2.49848 12.0368 2.23958 11.778 2.23958 11.4597V7.16201H1.12794C0.809659 7.16201 0.550781 6.90301 0.550781 6.58483V4.74326C0.550781 4.42499 0.809659 4.16611 1.12794 4.16611H2.23958V3.24391C2.23958 2.32951 2.52669 1.55158 3.0698 0.994294C3.61537 0.434499 4.37781 0.138672 5.27468 0.138672L6.72779 0.141042C7.04551 0.141577 7.30397 0.400478 7.30397 0.718173V2.42805C7.30397 2.7463 7.04516 3.0052 6.72697 3.0052L5.74861 3.00555C5.45022 3.00555 5.37423 3.06536 5.35799 3.0837C5.33122 3.11414 5.29936 3.20008 5.29936 3.43746V4.16604H6.65347C6.75539 4.16604 6.85416 4.19118 6.93903 4.23854C7.12215 4.34086 7.23597 4.5343 7.23597 4.74335L7.23525 6.58494C7.23525 6.90301 6.97635 7.16191 6.65809 7.16191H5.29933V11.4597C5.29936 11.778 5.04039 12.0368 4.72211 12.0368ZM2.93708 11.3393H4.60173V6.84975C4.60173 6.63725 4.77468 6.46441 4.98708 6.46441H6.53772L6.53835 4.86366H4.98698C4.77458 4.86366 4.60173 4.69083 4.60173 4.47832V3.43748C4.60173 3.16499 4.62944 2.85508 4.83512 2.62213C5.08368 2.34055 5.47537 2.30807 5.74842 2.30807L6.60644 2.30769V0.838363L5.27412 0.836202C3.83277 0.836202 2.93711 1.75884 2.93711 3.24393V4.4783C2.93711 4.6907 2.76426 4.86364 2.55183 4.86364H1.24831V6.46438H2.55183C2.76426 6.46438 2.93711 6.63723 2.93711 6.84973L2.93708 11.3393Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4875">
+                          <rect
+                            width="8.32872"
+                            height="11.8982"
+                            fill="white"
+                            transform="translate(0.519531 0.138672)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4887)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M0.502138 8.71692C1.49358 9.34365 2.64307 9.67491 3.81598 9.6719C5.54869 9.6719 7.13648 9.0063 8.28733 7.79784C9.38855 6.64123 9.99433 5.08711 9.96419 3.50995C10.3816 3.15278 10.8726 2.47078 10.8726 1.80606C10.8727 1.74748 10.8572 1.68994 10.8279 1.63926C10.7985 1.58858 10.7563 1.54656 10.7054 1.51746C10.6546 1.48835 10.597 1.4732 10.5384 1.47353C10.4798 1.47386 10.4224 1.48967 10.3719 1.51934C9.9797 1.74978 9.62208 1.81005 9.25427 1.70679C8.50314 0.974717 7.38508 0.820502 6.44295 1.32835C5.61959 1.77149 5.16182 2.58245 5.20303 3.46874C3.80681 3.29842 2.52869 2.60029 1.63083 1.51757C1.59674 1.47632 1.55318 1.44391 1.50388 1.4231C1.45457 1.40229 1.40097 1.3937 1.34763 1.39805C1.29429 1.4024 1.24278 1.41957 1.1975 1.44809C1.15222 1.47661 1.11449 1.51565 1.08753 1.56188C0.65591 2.30105 0.660341 3.15765 1.03569 3.84941C0.954384 3.86293 0.880588 3.90505 0.827609 3.96819C0.77463 4.03133 0.745955 4.11131 0.746755 4.19373C0.747886 4.53014 0.821411 4.86237 0.962336 5.16785C1.10326 5.47332 1.30828 5.74489 1.56347 5.9641C1.51818 6.00757 1.48614 6.063 1.47108 6.12394C1.45602 6.18489 1.45856 6.24886 1.47839 6.30842C1.58688 6.63208 1.76357 6.92869 1.99651 7.17821C2.22944 7.42774 2.51322 7.62438 2.82865 7.75485C2.17307 8.06763 1.44269 8.18956 0.721052 8.10671C0.373626 8.05974 0.202128 8.52681 0.502138 8.71692ZM3.90683 7.86874C4.15543 7.67774 4.02338 7.2798 3.7114 7.27315C3.44536 7.26751 3.18418 7.20071 2.94811 7.07791C2.71204 6.9551 2.5074 6.77961 2.35006 6.565C2.50333 6.5557 2.65532 6.53136 2.80384 6.49233C3.14107 6.40104 3.12512 5.91447 2.78257 5.84578C2.48286 5.78579 2.20476 5.64638 1.97737 5.44214C1.74997 5.23789 1.58162 4.97631 1.48991 4.68474C1.65698 4.72595 1.82714 4.74899 1.99687 4.75209C2.33322 4.75387 2.4604 4.32269 2.18609 4.14232C1.5679 3.73507 1.30423 3.01585 1.47883 2.33961C2.56647 3.43956 4.02712 4.09153 5.57217 4.1667C5.62345 4.16925 5.67463 4.15988 5.72168 4.13931C5.76872 4.11874 5.81036 4.08753 5.8433 4.04814C5.87624 4.00876 5.8996 3.96227 5.91153 3.91233C5.92346 3.86238 5.92365 3.81036 5.91206 3.76033C5.70157 2.84789 6.21119 2.20844 6.75847 1.91374C7.3 1.62127 8.16945 1.52998 8.83594 2.22926C9.03403 2.43798 9.70229 2.44596 10.0422 2.36664C9.88974 2.6538 9.65532 2.92633 9.43596 3.07966C9.38994 3.11188 9.35283 3.15524 9.32811 3.20569C9.30339 3.25614 9.29186 3.31203 9.2946 3.36815C9.36594 4.82388 8.82353 6.2712 7.80651 7.33874C6.78196 8.41425 5.36522 9.00674 3.81643 9.00674C3.20045 9.00674 2.59645 8.90659 2.02567 8.71338C2.70812 8.58132 3.35644 8.29239 3.90683 7.86874Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4887">
+                          <rect
+                            width="10.6355"
+                            height="10.6355"
+                            fill="white"
+                            transform="translate(0.300781 0.0332031)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4914)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M2.6126 9.79627H0.00390625V3.0572H2.6126V9.79627ZM0.438661 9.36152H2.17785V3.49196H0.438661V9.36152ZM10.0039 9.79627H7.39523V6.10065C7.39523 5.74049 7.10322 5.44848 6.74306 5.44848C6.38281 5.44848 6.09089 5.74049 6.09089 6.10065V9.79627H3.48219V3.0572H6.09089V3.49467C6.48464 3.20998 6.95822 3.05689 7.44411 3.0572C8.85443 3.0572 10.0039 4.20122 10.0039 5.60883V9.79627ZM7.82999 9.36152H9.56909V5.60881C9.56616 4.43775 8.61518 3.49045 7.44411 3.49196C6.90881 3.49196 6.40607 3.71749 6.03109 4.1251L5.65605 4.53543V3.49196H3.91695V9.36152H5.65605V6.10065C5.65605 5.5003 6.14271 5.01372 6.74306 5.01372C7.34332 5.01372 7.82999 5.5003 7.82999 6.10065V9.36152ZM1.30825 2.62237C0.587846 2.62237 0.00390625 2.03843 0.00390625 1.31802C0.00390625 0.597693 0.587846 0.0136719 1.30825 0.0136719C2.02866 0.0136719 2.6126 0.597693 2.6126 1.31802C2.61109 2.03777 2.02801 2.62094 1.30825 2.62237ZM1.30825 0.448508C0.828029 0.448508 0.438661 0.837815 0.438661 1.31802C0.438661 1.7983 0.828029 2.18761 1.30825 2.18761C1.78848 2.18761 2.17785 1.7983 2.17785 1.31802C2.17785 0.837815 1.78846 0.448508 1.30825 0.448508Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4914">
+                          <rect
+                            width="10"
+                            height="10"
+                            fill="white"
+                            transform="translate(0.00390625)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4922)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M4.50456 2.18945C4.20129 2.1894 3.90099 2.2491 3.62079 2.36513C3.3406 2.48117 3.08601 2.65126 2.87157 2.86571C2.65712 3.08015 2.48703 3.33474 2.37099 3.61493C2.25496 3.89513 2.19526 4.19543 2.19531 4.4987C2.19526 4.80197 2.25496 5.10228 2.37099 5.38247C2.48703 5.66267 2.65712 5.91726 2.87157 6.1317C3.08601 6.34614 3.3406 6.51624 3.62079 6.63227C3.90099 6.74831 4.20129 6.808 4.50456 6.80795C4.80783 6.808 5.10814 6.74831 5.38833 6.63227C5.66853 6.51624 5.92312 6.34614 6.13756 6.1317C6.352 5.91726 6.5221 5.66267 6.63813 5.38247C6.75417 5.10228 6.81386 4.80197 6.81381 4.4987C6.81386 4.19543 6.75417 3.89513 6.63813 3.61493C6.5221 3.33474 6.352 3.08015 6.13756 2.86571C5.92312 2.65126 5.66853 2.48117 5.38833 2.36513C5.10814 2.2491 4.80783 2.1894 4.50456 2.18945ZM4.50456 5.99758C4.20822 5.9975 3.91855 5.90956 3.67218 5.74488C3.42581 5.58019 3.2338 5.34616 3.12043 5.07236C3.00706 4.79856 2.97742 4.49729 3.03525 4.20664C3.09308 3.916 3.23579 3.64902 3.44534 3.43948C3.65488 3.22993 3.92186 3.08722 4.2125 3.02939C4.50315 2.97156 4.80442 3.0012 5.07822 3.11457C5.35202 3.22794 5.58605 3.41995 5.75074 3.66632C5.91542 3.91269 6.00336 4.20236 6.00344 4.4987C6.00354 4.69557 5.96483 4.89052 5.88954 5.07241C5.81425 5.25431 5.70385 5.41958 5.56465 5.55879C5.42544 5.69799 5.26017 5.80839 5.07827 5.88368C4.89638 5.95897 4.70143 5.99768 4.50456 5.99758Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M6.35559 0.02827C5.52759 -0.010355 3.47671 -0.00848 2.64796 0.02827C1.91971 0.062395 1.27734 0.23827 0.75946 0.756145C-0.10604 1.62164 0.00458522 2.7879 0.00458522 4.49827C0.00458522 6.24877 -0.0929148 7.38802 0.75946 8.24039C1.62834 9.10889 2.81146 8.99527 4.50159 8.99527C6.23559 8.99527 6.83408 8.99639 7.44721 8.75902C8.28084 8.43539 8.91008 7.69027 8.97159 6.35189C9.01058 5.52352 9.00834 3.47302 8.97159 2.64427C8.89734 1.0644 8.04946 0.10627 6.35559 0.02827ZM7.66621 7.66777C7.09884 8.23514 6.31171 8.18452 4.49071 8.18452C2.61571 8.18452 1.86384 8.21227 1.31521 7.66214C0.683335 7.03327 0.79771 6.0234 0.79771 4.49227C0.79771 2.42039 0.585085 0.92827 2.66446 0.82177C3.14221 0.804895 3.28284 0.79927 4.48546 0.79927L4.50234 0.81052C6.50071 0.81052 8.06859 0.60127 8.16271 2.68027C8.18408 3.15464 8.18896 3.29715 8.18896 4.4979C8.18859 6.35114 8.22383 7.10752 7.66621 7.66777Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          d="M6.90291 2.63784C7.20093 2.63784 7.44253 2.39625 7.44253 2.09822C7.44253 1.80019 7.20093 1.55859 6.90291 1.55859C6.60488 1.55859 6.36328 1.80019 6.36328 2.09822C6.36328 2.39625 6.60488 2.63784 6.90291 2.63784Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4922">
+                          <rect width="9" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="7"
+                      viewBox="0 0 9 7"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4931)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M5.83218 2.98227L3.86028 1.90335C3.7469 1.84131 3.61289 1.84362 3.50175 1.90947C3.39055 1.97538 3.32422 2.09183 3.32422 2.22108V4.36042C3.32422 4.48906 3.39015 4.6053 3.5006 4.67128C3.55827 4.70573 3.62222 4.72304 3.6863 4.72304C3.74626 4.72295 3.80526 4.70795 3.85798 4.67939L5.82993 3.61906C5.88737 3.58818 5.93541 3.54236 5.96897 3.48645C6.00253 3.43053 6.02036 3.36659 6.02059 3.30138C6.02086 3.23614 6.00349 3.17205 5.97032 3.11588C5.93716 3.05971 5.88942 3.01354 5.83218 2.98227ZM3.84727 4.09129V2.49239L5.32105 3.29878L3.84727 4.09129Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M8.85603 1.59655L8.85563 1.59247C8.84806 1.52063 8.77282 0.881611 8.46217 0.556577C8.10309 0.174276 7.69598 0.127835 7.50021 0.105573C7.48541 0.103941 7.47064 0.102168 7.45588 0.100256L7.44027 0.098635C6.26032 0.0128309 4.47829 0.00111602 4.46045 0.00104629L4.45889 0.000976562L4.45732 0.00104629C4.43948 0.00111602 2.65745 0.0128309 1.46685 0.098635L1.45112 0.100256C1.43845 0.101965 1.42448 0.103534 1.4093 0.105312C1.21578 0.127626 0.813046 0.174154 0.452955 0.570261C0.157068 0.891827 0.0715428 1.51716 0.0627567 1.58743L0.0617456 1.59655C0.0590784 1.62644 -0.00390625 2.33814 -0.00390625 3.0526V3.72049C-0.00390625 4.43497 0.0590784 5.14665 0.0617456 5.17661L0.0622163 5.18109C0.0697821 5.25178 0.144952 5.8791 0.454175 6.20426C0.791813 6.57375 1.21871 6.62264 1.44833 6.64893C1.48463 6.65308 1.51588 6.65662 1.53719 6.66037L1.55783 6.66323C2.23913 6.72806 4.37526 6.75998 4.46582 6.76129L4.46856 6.76136L4.47128 6.76129C4.48911 6.76122 6.27108 6.7495 7.45107 6.6637L7.46665 6.66208C7.48157 6.66009 7.49833 6.65833 7.5167 6.65641C7.70916 6.63598 8.10969 6.59357 8.46482 6.20281C8.7607 5.88121 8.8463 5.25586 8.85501 5.18566L8.85603 5.17654C8.85869 5.14658 8.92175 4.43495 8.92175 3.72049V3.0526C8.92168 2.33812 8.85869 1.62651 8.85603 1.59655ZM8.39862 3.72049C8.39862 4.38178 8.34089 5.06281 8.33543 5.12533C8.31324 5.29756 8.22299 5.69318 8.07884 5.84988C7.85657 6.09441 7.62825 6.11866 7.46154 6.1363C7.44296 6.13821 7.42439 6.1403 7.40585 6.14256C6.26454 6.22509 4.5498 6.23775 4.47081 6.23823C4.38222 6.23694 2.27733 6.20473 1.6168 6.14338C1.58295 6.13786 1.54637 6.13364 1.50785 6.12928C1.31234 6.10688 1.04471 6.07623 0.838934 5.84988L0.834088 5.84471C0.692446 5.69714 0.604812 5.32716 0.582532 5.12737C0.578384 5.08012 0.519147 4.39104 0.519147 3.72049V3.0526C0.519147 2.39207 0.576762 1.71178 0.582341 1.64797C0.608839 1.44511 0.700762 1.07344 0.838934 0.923206C1.068 0.67125 1.30955 0.64334 1.4693 0.624878C1.48456 0.6231 1.49878 0.621479 1.51193 0.619771C2.66985 0.536825 4.39691 0.5245 4.45889 0.52403C4.52086 0.524431 6.24731 0.536825 7.39495 0.619771C7.40904 0.621549 7.42443 0.623309 7.44097 0.625227C7.60529 0.64395 7.85364 0.672278 8.08157 0.915378L8.08367 0.917627C8.22532 1.0652 8.31296 1.44164 8.33522 1.64545C8.33918 1.69006 8.39862 2.38062 8.39862 3.0526V3.72049Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4931">
+                          <rect width="8.92562" height="6.75" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Social Icons::End -->
+            </div>
+          </div>
+          <!-- Information Section::End -->
+        </div>
+        <!-- Card-2::End -->
+
+        <!-- Card-3::Start -->
+
+        <div class="relative overflow-hidden rounded-lg bg-primarybgColor">
+          <!-- Bg-image Section Section::Start -->
+
+          <div class="h-[150px] w-full rounded-t-lg md:h-[200px] xl:h-[220px]">
+            <img
+              class="h-full w-full rounded-t-lg object-cover"
+              src="./assets/img/about-us/review-bg.png"
+              alt=""
+            />
+          </div>
+          <!-- Bg-image Section Section::End -->
+
+          <!-- Profile Image Section::Start -->
+          <div
+            class="absolute top-24 flex w-full items-center justify-center md:top-28 xl:top-32"
+          >
+            <img
+              class="size-24 rounded-full border-2 border-white object-cover md:size-36 xl:size-44 2xl:size-52"
+              src="./assets/img/about-us/person-1.png"
+              alt=""
+            />
+          </div>
+          <!-- Profile Image Section::End -->
+
+          <!-- Information Section::Start -->
+          <div
+            class="xl:mb-1z mx-6 mb-12 mt-16 rounded-lg bg-white text-center md:mt-20 xl:mt-28 2xl:mt-36"
+          >
+            <div class="space-y-1 py-5 font-poppins xl:py-10">
+              <h2 class="font-semibold md:text-lg">ALex Paluk</h2>
+              <h2 class="text-sm text-[#727272]">Tourist Guide</h2>
+
+              <!-- Social Icons::Start -->
+              <div class="ml-2 flex w-full items-center justify-center pt-2">
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="13"
+                      viewBox="0 0 9 13"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4875)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M4.72211 12.0368H2.81673C2.49848 12.0368 2.23958 11.778 2.23958 11.4597V7.16201H1.12794C0.809659 7.16201 0.550781 6.90301 0.550781 6.58483V4.74326C0.550781 4.42499 0.809659 4.16611 1.12794 4.16611H2.23958V3.24391C2.23958 2.32951 2.52669 1.55158 3.0698 0.994294C3.61537 0.434499 4.37781 0.138672 5.27468 0.138672L6.72779 0.141042C7.04551 0.141577 7.30397 0.400478 7.30397 0.718173V2.42805C7.30397 2.7463 7.04516 3.0052 6.72697 3.0052L5.74861 3.00555C5.45022 3.00555 5.37423 3.06536 5.35799 3.0837C5.33122 3.11414 5.29936 3.20008 5.29936 3.43746V4.16604H6.65347C6.75539 4.16604 6.85416 4.19118 6.93903 4.23854C7.12215 4.34086 7.23597 4.5343 7.23597 4.74335L7.23525 6.58494C7.23525 6.90301 6.97635 7.16191 6.65809 7.16191H5.29933V11.4597C5.29936 11.778 5.04039 12.0368 4.72211 12.0368ZM2.93708 11.3393H4.60173V6.84975C4.60173 6.63725 4.77468 6.46441 4.98708 6.46441H6.53772L6.53835 4.86366H4.98698C4.77458 4.86366 4.60173 4.69083 4.60173 4.47832V3.43748C4.60173 3.16499 4.62944 2.85508 4.83512 2.62213C5.08368 2.34055 5.47537 2.30807 5.74842 2.30807L6.60644 2.30769V0.838363L5.27412 0.836202C3.83277 0.836202 2.93711 1.75884 2.93711 3.24393V4.4783C2.93711 4.6907 2.76426 4.86364 2.55183 4.86364H1.24831V6.46438H2.55183C2.76426 6.46438 2.93711 6.63723 2.93711 6.84973L2.93708 11.3393Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4875">
+                          <rect
+                            width="8.32872"
+                            height="11.8982"
+                            fill="white"
+                            transform="translate(0.519531 0.138672)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4887)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M0.502138 8.71692C1.49358 9.34365 2.64307 9.67491 3.81598 9.6719C5.54869 9.6719 7.13648 9.0063 8.28733 7.79784C9.38855 6.64123 9.99433 5.08711 9.96419 3.50995C10.3816 3.15278 10.8726 2.47078 10.8726 1.80606C10.8727 1.74748 10.8572 1.68994 10.8279 1.63926C10.7985 1.58858 10.7563 1.54656 10.7054 1.51746C10.6546 1.48835 10.597 1.4732 10.5384 1.47353C10.4798 1.47386 10.4224 1.48967 10.3719 1.51934C9.9797 1.74978 9.62208 1.81005 9.25427 1.70679C8.50314 0.974717 7.38508 0.820502 6.44295 1.32835C5.61959 1.77149 5.16182 2.58245 5.20303 3.46874C3.80681 3.29842 2.52869 2.60029 1.63083 1.51757C1.59674 1.47632 1.55318 1.44391 1.50388 1.4231C1.45457 1.40229 1.40097 1.3937 1.34763 1.39805C1.29429 1.4024 1.24278 1.41957 1.1975 1.44809C1.15222 1.47661 1.11449 1.51565 1.08753 1.56188C0.65591 2.30105 0.660341 3.15765 1.03569 3.84941C0.954384 3.86293 0.880588 3.90505 0.827609 3.96819C0.77463 4.03133 0.745955 4.11131 0.746755 4.19373C0.747886 4.53014 0.821411 4.86237 0.962336 5.16785C1.10326 5.47332 1.30828 5.74489 1.56347 5.9641C1.51818 6.00757 1.48614 6.063 1.47108 6.12394C1.45602 6.18489 1.45856 6.24886 1.47839 6.30842C1.58688 6.63208 1.76357 6.92869 1.99651 7.17821C2.22944 7.42774 2.51322 7.62438 2.82865 7.75485C2.17307 8.06763 1.44269 8.18956 0.721052 8.10671C0.373626 8.05974 0.202128 8.52681 0.502138 8.71692ZM3.90683 7.86874C4.15543 7.67774 4.02338 7.2798 3.7114 7.27315C3.44536 7.26751 3.18418 7.20071 2.94811 7.07791C2.71204 6.9551 2.5074 6.77961 2.35006 6.565C2.50333 6.5557 2.65532 6.53136 2.80384 6.49233C3.14107 6.40104 3.12512 5.91447 2.78257 5.84578C2.48286 5.78579 2.20476 5.64638 1.97737 5.44214C1.74997 5.23789 1.58162 4.97631 1.48991 4.68474C1.65698 4.72595 1.82714 4.74899 1.99687 4.75209C2.33322 4.75387 2.4604 4.32269 2.18609 4.14232C1.5679 3.73507 1.30423 3.01585 1.47883 2.33961C2.56647 3.43956 4.02712 4.09153 5.57217 4.1667C5.62345 4.16925 5.67463 4.15988 5.72168 4.13931C5.76872 4.11874 5.81036 4.08753 5.8433 4.04814C5.87624 4.00876 5.8996 3.96227 5.91153 3.91233C5.92346 3.86238 5.92365 3.81036 5.91206 3.76033C5.70157 2.84789 6.21119 2.20844 6.75847 1.91374C7.3 1.62127 8.16945 1.52998 8.83594 2.22926C9.03403 2.43798 9.70229 2.44596 10.0422 2.36664C9.88974 2.6538 9.65532 2.92633 9.43596 3.07966C9.38994 3.11188 9.35283 3.15524 9.32811 3.20569C9.30339 3.25614 9.29186 3.31203 9.2946 3.36815C9.36594 4.82388 8.82353 6.2712 7.80651 7.33874C6.78196 8.41425 5.36522 9.00674 3.81643 9.00674C3.20045 9.00674 2.59645 8.90659 2.02567 8.71338C2.70812 8.58132 3.35644 8.29239 3.90683 7.86874Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4887">
+                          <rect
+                            width="10.6355"
+                            height="10.6355"
+                            fill="white"
+                            transform="translate(0.300781 0.0332031)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4914)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M2.6126 9.79627H0.00390625V3.0572H2.6126V9.79627ZM0.438661 9.36152H2.17785V3.49196H0.438661V9.36152ZM10.0039 9.79627H7.39523V6.10065C7.39523 5.74049 7.10322 5.44848 6.74306 5.44848C6.38281 5.44848 6.09089 5.74049 6.09089 6.10065V9.79627H3.48219V3.0572H6.09089V3.49467C6.48464 3.20998 6.95822 3.05689 7.44411 3.0572C8.85443 3.0572 10.0039 4.20122 10.0039 5.60883V9.79627ZM7.82999 9.36152H9.56909V5.60881C9.56616 4.43775 8.61518 3.49045 7.44411 3.49196C6.90881 3.49196 6.40607 3.71749 6.03109 4.1251L5.65605 4.53543V3.49196H3.91695V9.36152H5.65605V6.10065C5.65605 5.5003 6.14271 5.01372 6.74306 5.01372C7.34332 5.01372 7.82999 5.5003 7.82999 6.10065V9.36152ZM1.30825 2.62237C0.587846 2.62237 0.00390625 2.03843 0.00390625 1.31802C0.00390625 0.597693 0.587846 0.0136719 1.30825 0.0136719C2.02866 0.0136719 2.6126 0.597693 2.6126 1.31802C2.61109 2.03777 2.02801 2.62094 1.30825 2.62237ZM1.30825 0.448508C0.828029 0.448508 0.438661 0.837815 0.438661 1.31802C0.438661 1.7983 0.828029 2.18761 1.30825 2.18761C1.78848 2.18761 2.17785 1.7983 2.17785 1.31802C2.17785 0.837815 1.78846 0.448508 1.30825 0.448508Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4914">
+                          <rect
+                            width="10"
+                            height="10"
+                            fill="white"
+                            transform="translate(0.00390625)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4922)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M4.50456 2.18945C4.20129 2.1894 3.90099 2.2491 3.62079 2.36513C3.3406 2.48117 3.08601 2.65126 2.87157 2.86571C2.65712 3.08015 2.48703 3.33474 2.37099 3.61493C2.25496 3.89513 2.19526 4.19543 2.19531 4.4987C2.19526 4.80197 2.25496 5.10228 2.37099 5.38247C2.48703 5.66267 2.65712 5.91726 2.87157 6.1317C3.08601 6.34614 3.3406 6.51624 3.62079 6.63227C3.90099 6.74831 4.20129 6.808 4.50456 6.80795C4.80783 6.808 5.10814 6.74831 5.38833 6.63227C5.66853 6.51624 5.92312 6.34614 6.13756 6.1317C6.352 5.91726 6.5221 5.66267 6.63813 5.38247C6.75417 5.10228 6.81386 4.80197 6.81381 4.4987C6.81386 4.19543 6.75417 3.89513 6.63813 3.61493C6.5221 3.33474 6.352 3.08015 6.13756 2.86571C5.92312 2.65126 5.66853 2.48117 5.38833 2.36513C5.10814 2.2491 4.80783 2.1894 4.50456 2.18945ZM4.50456 5.99758C4.20822 5.9975 3.91855 5.90956 3.67218 5.74488C3.42581 5.58019 3.2338 5.34616 3.12043 5.07236C3.00706 4.79856 2.97742 4.49729 3.03525 4.20664C3.09308 3.916 3.23579 3.64902 3.44534 3.43948C3.65488 3.22993 3.92186 3.08722 4.2125 3.02939C4.50315 2.97156 4.80442 3.0012 5.07822 3.11457C5.35202 3.22794 5.58605 3.41995 5.75074 3.66632C5.91542 3.91269 6.00336 4.20236 6.00344 4.4987C6.00354 4.69557 5.96483 4.89052 5.88954 5.07241C5.81425 5.25431 5.70385 5.41958 5.56465 5.55879C5.42544 5.69799 5.26017 5.80839 5.07827 5.88368C4.89638 5.95897 4.70143 5.99768 4.50456 5.99758Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M6.35559 0.02827C5.52759 -0.010355 3.47671 -0.00848 2.64796 0.02827C1.91971 0.062395 1.27734 0.23827 0.75946 0.756145C-0.10604 1.62164 0.00458522 2.7879 0.00458522 4.49827C0.00458522 6.24877 -0.0929148 7.38802 0.75946 8.24039C1.62834 9.10889 2.81146 8.99527 4.50159 8.99527C6.23559 8.99527 6.83408 8.99639 7.44721 8.75902C8.28084 8.43539 8.91008 7.69027 8.97159 6.35189C9.01058 5.52352 9.00834 3.47302 8.97159 2.64427C8.89734 1.0644 8.04946 0.10627 6.35559 0.02827ZM7.66621 7.66777C7.09884 8.23514 6.31171 8.18452 4.49071 8.18452C2.61571 8.18452 1.86384 8.21227 1.31521 7.66214C0.683335 7.03327 0.79771 6.0234 0.79771 4.49227C0.79771 2.42039 0.585085 0.92827 2.66446 0.82177C3.14221 0.804895 3.28284 0.79927 4.48546 0.79927L4.50234 0.81052C6.50071 0.81052 8.06859 0.60127 8.16271 2.68027C8.18408 3.15464 8.18896 3.29715 8.18896 4.4979C8.18859 6.35114 8.22383 7.10752 7.66621 7.66777Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          d="M6.90291 2.63784C7.20093 2.63784 7.44253 2.39625 7.44253 2.09822C7.44253 1.80019 7.20093 1.55859 6.90291 1.55859C6.60488 1.55859 6.36328 1.80019 6.36328 2.09822C6.36328 2.39625 6.60488 2.63784 6.90291 2.63784Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4922">
+                          <rect width="9" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mr-2">
+                  <a
+                    href="# "
+                    class="group inline-block rounded-full border border-primary p-2 transition duration-700 hover:bg-primary"
+                  >
+                    <svg
+                      class="size-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="7"
+                      viewBox="0 0 9 7"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9123_4931)">
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M5.83218 2.98227L3.86028 1.90335C3.7469 1.84131 3.61289 1.84362 3.50175 1.90947C3.39055 1.97538 3.32422 2.09183 3.32422 2.22108V4.36042C3.32422 4.48906 3.39015 4.6053 3.5006 4.67128C3.55827 4.70573 3.62222 4.72304 3.6863 4.72304C3.74626 4.72295 3.80526 4.70795 3.85798 4.67939L5.82993 3.61906C5.88737 3.58818 5.93541 3.54236 5.96897 3.48645C6.00253 3.43053 6.02036 3.36659 6.02059 3.30138C6.02086 3.23614 6.00349 3.17205 5.97032 3.11588C5.93716 3.05971 5.88942 3.01354 5.83218 2.98227ZM3.84727 4.09129V2.49239L5.32105 3.29878L3.84727 4.09129Z"
+                          fill="#1CA8CB"
+                        />
+                        <path
+                          class="transition duration-700 group-hover:fill-white"
+                          d="M8.85603 1.59655L8.85563 1.59247C8.84806 1.52063 8.77282 0.881611 8.46217 0.556577C8.10309 0.174276 7.69598 0.127835 7.50021 0.105573C7.48541 0.103941 7.47064 0.102168 7.45588 0.100256L7.44027 0.098635C6.26032 0.0128309 4.47829 0.00111602 4.46045 0.00104629L4.45889 0.000976562L4.45732 0.00104629C4.43948 0.00111602 2.65745 0.0128309 1.46685 0.098635L1.45112 0.100256C1.43845 0.101965 1.42448 0.103534 1.4093 0.105312C1.21578 0.127626 0.813046 0.174154 0.452955 0.570261C0.157068 0.891827 0.0715428 1.51716 0.0627567 1.58743L0.0617456 1.59655C0.0590784 1.62644 -0.00390625 2.33814 -0.00390625 3.0526V3.72049C-0.00390625 4.43497 0.0590784 5.14665 0.0617456 5.17661L0.0622163 5.18109C0.0697821 5.25178 0.144952 5.8791 0.454175 6.20426C0.791813 6.57375 1.21871 6.62264 1.44833 6.64893C1.48463 6.65308 1.51588 6.65662 1.53719 6.66037L1.55783 6.66323C2.23913 6.72806 4.37526 6.75998 4.46582 6.76129L4.46856 6.76136L4.47128 6.76129C4.48911 6.76122 6.27108 6.7495 7.45107 6.6637L7.46665 6.66208C7.48157 6.66009 7.49833 6.65833 7.5167 6.65641C7.70916 6.63598 8.10969 6.59357 8.46482 6.20281C8.7607 5.88121 8.8463 5.25586 8.85501 5.18566L8.85603 5.17654C8.85869 5.14658 8.92175 4.43495 8.92175 3.72049V3.0526C8.92168 2.33812 8.85869 1.62651 8.85603 1.59655ZM8.39862 3.72049C8.39862 4.38178 8.34089 5.06281 8.33543 5.12533C8.31324 5.29756 8.22299 5.69318 8.07884 5.84988C7.85657 6.09441 7.62825 6.11866 7.46154 6.1363C7.44296 6.13821 7.42439 6.1403 7.40585 6.14256C6.26454 6.22509 4.5498 6.23775 4.47081 6.23823C4.38222 6.23694 2.27733 6.20473 1.6168 6.14338C1.58295 6.13786 1.54637 6.13364 1.50785 6.12928C1.31234 6.10688 1.04471 6.07623 0.838934 5.84988L0.834088 5.84471C0.692446 5.69714 0.604812 5.32716 0.582532 5.12737C0.578384 5.08012 0.519147 4.39104 0.519147 3.72049V3.0526C0.519147 2.39207 0.576762 1.71178 0.582341 1.64797C0.608839 1.44511 0.700762 1.07344 0.838934 0.923206C1.068 0.67125 1.30955 0.64334 1.4693 0.624878C1.48456 0.6231 1.49878 0.621479 1.51193 0.619771C2.66985 0.536825 4.39691 0.5245 4.45889 0.52403C4.52086 0.524431 6.24731 0.536825 7.39495 0.619771C7.40904 0.621549 7.42443 0.623309 7.44097 0.625227C7.60529 0.64395 7.85364 0.672278 8.08157 0.915378L8.08367 0.917627C8.22532 1.0652 8.31296 1.44164 8.33522 1.64545C8.33918 1.69006 8.39862 2.38062 8.39862 3.0526V3.72049Z"
+                          fill="#1CA8CB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9123_4931">
+                          <rect width="8.92562" height="6.75" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Social Icons::End -->
+            </div>
+          </div>
+          <!-- Information Section::End -->
+        </div>
+        <!-- Card-3::End -->
+      </section>
+      <!-- Service Card Section::End -->
+      <!-- Service Section::End -->
+
+      <!-- Image Slider Section::Start -->
+      <section
+        id="slider-container"
+        class="group my-12 flex w-[100vw] cursor-pointer items-center gap-5 xl:my-20 xl:gap-10"
+      >
+        <!-- 1st Part::Start -->
+
+        <div class="slider--content flex items-center gap-5 xl:gap-10">
+          <div
+            class="group-hover:pause-animation h-[250px] w-[200px] cursor-pointer overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-5.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] cursor-pointer overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] cursor-pointer overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] cursor-pointer overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] cursor-pointer overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- 1st Part::End -->
+
+        <!-- 2nd Part::Start -->
+
+        <div class="slider--content flex items-center gap-5 xl:gap-10">
+          <div
+            class="h-[250px] w-[200px] overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-5.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[250px] w-[200px] overflow-hidden rounded-lg md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="rounded-lgh-[250px] w-[200px] overflow-hidden md:h-[350px] md:w-[300px] lg:h-[470px] lg:w-[400px] xl:h-[500px] xl:w-[420px] 2xl:h-[570px] 2xl:w-[460px]"
+          >
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/img/about-us/slider/slider-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- 2nd Part::End -->
+      </section>
+      <!-- Image Slider Section::End -->
     </main>
     <!-- Main Section::End -->
 
-    <!-- Footer::Start -->
+ <!-- Footer::Start -->
     <footer class="bg-textColor py-14 text-white xl:py-28">
       <section class="container mx-auto">
         <!-- Footer Title::start -->
         <div
-          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:gap-0 xl:grid-cols-2"
+          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:grid-cols-2 lg:gap-0"
         >
           <div>
             <h2
@@ -624,7 +1403,7 @@
               get updated the latest newsletter
             </h2>
           </div>
-          <div class="flex flex-col gap-5 md:flex-row xl:items-center">
+          <form class="flex flex-col gap-5 md:flex-row xl:items-center">
             <input
               type="text"
               name=""
@@ -632,14 +1411,16 @@
               placeholder="Enter your Email"
               class="flex-1 rounded-[48px] px-3 py-2 font-inter text-textColor placeholder:font-inter placeholder:text-sm placeholder:text-[#6E7070] focus:outline-none xl:px-5 xl:py-4"
             />
+
             <div>
-              <a
+              <button
+                type="submit"
                 class="inline-flex cursor-pointer items-center gap-2 rounded-[48px] bg-primary px-4 py-2 font-inter text-sm text-white transition duration-500 hover:scale-105 md:gap-3 md:text-base xl:px-8 xl:py-4"
               >
                 Subscribe Now <img src="./assets/img/icons/plane.png" alt="" />
-              </a>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
         <!-- Footer Title::End -->
 
@@ -715,11 +1496,11 @@
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
-              <a href="#" class="text-sm lg:text-base">About Us</a>
+              <a href="about-us.html" class="text-sm lg:text-base">About Us</a>
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
-              <a href="#" class="text-sm lg:text-base">Services</a>
+              <a href="services.html" class="text-sm lg:text-base">Services</a>
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
@@ -819,6 +1600,7 @@
       </div>
     </section>
     <!-- Footer::End -->
+
     <!-- Scripts::Start -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>

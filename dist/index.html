@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
   </head>
-  <body class="tracking-tight">
+  <body>
     <!-- Header::start -->
     <header
       class="h-full bg-cover bg-no-repeat 2xl:h-[90vh]"
@@ -45,10 +45,12 @@
               class="transition duration-300 hover:text-primary"
               >Best Deals</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a
+              href="about-us.html"
+              class="transition duration-300 hover:text-primary"
               >About Us</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a href="services.html" class="transition duration-300 hover:text-primary"
               >Services</a
             >
             <a href="#" class="transition duration-300 hover:text-primary"
@@ -69,7 +71,7 @@
               >Cart</a
             >
             <a
-              href=""
+              href="registration.html"
               class="rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105"
             >
               Login
@@ -111,8 +113,8 @@
                 <a href="index.html" class="text-primary">Home</a>
                 <a href="destination.html">Destination</a>
                 <a href="best-deals.html">Best Deals</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
                 <a href="">Blog</a>
               </div>
 
@@ -2000,7 +2002,6 @@
         </section>
       </section>
       <!-- Trending Departure Section ::End -->
-
       <!-- News & Article Section::Start -->
       <section class="bg-secondaryBgColor py-14 xl:py-28">
         <div class="container mx-auto">
@@ -2018,50 +2019,48 @@
                 News & Articles From Tourm
               </h2>
             </div>
-            <div class="relative inline-block md:mt-12 xl:mt-0">
-              <a
-                href="#"
-                class="group relative inline-flex cursor-pointer items-center gap-3 overflow-hidden rounded-[50px] border-2 border-textColor px-4 py-1 font-inter text-sm transition-all duration-300 hover:border-primary md:px-6 md:py-2.5 md:text-base"
+            <div>
+              <div
+                class="group relative inline-block cursor-pointer overflow-hidden rounded-[50px] border border-textColor px-10 py-3 transition duration-500 hover:border-primary md:mt-12 md:py-4 xl:mt-0"
               >
-                <!-- Text -->
-                <span
-                  class="relative z-10 transition-colors duration-300 group-hover:text-white"
-                >
-                  See More Articles
-                </span>
+                <a
+                  href="#"
+                  class="relative z-10 flex items-center gap-2 font-inter transition duration-500 group-hover:border-primary group-hover:text-white"
+                  >See More Articles
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      class="transition duration-700 group-hover:stroke-white"
+                      d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
+                      stroke="#113D48"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="transition duration-700 group-hover:stroke-white"
+                      d="M3.5 12H20.33"
+                      stroke="#113D48"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
 
-                <!-- SVG Icon -->
-                <svg
-                  class="transition-colors duration-300 group-hover:text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M14.4271 5.92969L20.4971 11.9997L14.4271 18.0697"
-                    stroke="#113D48"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 12H20.33"
-                    stroke="#113D48"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <!-- Animated Background -->
+                <!-- Animated div::Start -->
                 <div
-                  class="absolute inset-0 h-full w-full -translate-x-full transform bg-primary duration-500 group-hover:translate-x-0"
+                  class="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0"
                 ></div>
-              </a>
+                <!-- Animated div::End -->
+              </div>
             </div>
           </div>
           <!-- Title Section::End -->
@@ -2095,20 +2094,50 @@
                   <h5 class="text-[#6E7070]">3 min read</h5>
                 </div>
                 <h2
-                  class="font-poppins font-semibold text-textColor md:text-xl xl:w-[85%]"
+                  class="pb-4 font-poppins font-semibold text-textColor md:text-xl 2xl:w-[85%]"
                 >
                   University class starting soon while the lovely valley team
                 </h2>
-                <div class="pt-4">
+                <div
+                  class="group relative inline-block cursor-pointer overflow-hidden rounded-[50px] border border-textColor px-6 py-2 transition duration-500 hover:border-primary md:mt-12 md:py-3 xl:mt-0"
+                >
                   <a
                     href="#"
-                    class="md:py-3font-inter inline-flex items-center gap-3 rounded-[50px] border border-textColor px-4 py-1 text-sm md:px-8 md:py-2 md:text-base lg:py-3"
-                  >
-                    Read More<img
-                      src="./assets/img/icons/arrow-right-black.png "
-                      alt=""
-                    />
+                    class="relative z-10 flex items-center gap-2 font-poppins text-sm transition duration-500 group-hover:border-primary group-hover:text-white md:text-base"
+                    >Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        class="transition duration-700 group-hover:stroke-white"
+                        d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
+                        stroke="#113D48"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="transition duration-700 group-hover:stroke-white"
+                        d="M3.5 12H20.33"
+                        stroke="#113D48"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </a>
+
+                  <!-- Animated div::Start -->
+                  <div
+                    class="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0"
+                  ></div>
+                  <!-- Animated div::End -->
                 </div>
               </div>
 
@@ -2140,21 +2169,51 @@
                   <h5 class="text-[#6E7070]">3 min read</h5>
                 </div>
                 <h2
-                  class="font-poppins font-semibold text-textColor md:text-xl"
+                  class="2xl:w-[85%]l pb-4 font-poppins font-semibold text-textColor md:text-xl"
                 >
                   Enrich Your Mind Envision Your <br />
                   Future Education for Success
                 </h2>
-                <div class="pt-4">
+                <div
+                  class="group relative inline-block cursor-pointer overflow-hidden rounded-[50px] border border-textColor px-6 py-2 transition duration-500 hover:border-primary md:mt-12 md:py-3 xl:mt-0"
+                >
                   <a
                     href="#"
-                    class="md:py-3font-inter inline-flex items-center gap-3 rounded-[50px] border border-textColor px-4 py-1 text-sm md:px-8 md:py-2 md:text-base lg:py-3"
-                  >
-                    Read More<img
-                      src="./assets/img/icons/arrow-right-black.png "
-                      alt=""
-                    />
+                    class="relative z-10 flex items-center gap-2 font-poppins text-sm transition duration-500 group-hover:border-primary group-hover:text-white md:text-base"
+                    >Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        class="transition duration-700 group-hover:stroke-white"
+                        d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
+                        stroke="#113D48"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="transition duration-700 group-hover:stroke-white"
+                        d="M3.5 12H20.33"
+                        stroke="#113D48"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </a>
+
+                  <!-- Animated div::Start -->
+                  <div
+                    class="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0"
+                  ></div>
+                  <!-- Animated div::End -->
                 </div>
               </div>
 
@@ -2186,21 +2245,51 @@
                   <h5 class="text-[#6E7070]">3 min read</h5>
                 </div>
                 <h2
-                  class="font-poppins font-semibold text-textColor md:text-xl"
+                  class="pb-4 font-poppins font-semibold text-textColor md:text-xl 2xl:w-[85%]"
                 >
                   Exploring The Green Spaces Of <br />
                   Realar Residence Harmony with
                 </h2>
-                <div class="pt-4">
+                <div
+                  class="group relative inline-block cursor-pointer overflow-hidden rounded-[50px] border border-textColor px-6 py-2 transition duration-500 hover:border-primary md:mt-12 md:py-3 xl:mt-0"
+                >
                   <a
                     href="#"
-                    class="md:py-3font-inter inline-flex items-center gap-3 rounded-[50px] border border-textColor px-4 py-1 text-sm md:px-8 md:py-2 md:text-base lg:py-3"
-                  >
-                    Read More<img
-                      src="./assets/img/icons/arrow-right-black.png "
-                      alt=""
-                    />
+                    class="relative z-10 flex items-center gap-2 font-poppins text-sm transition duration-500 group-hover:border-primary group-hover:text-white md:text-base"
+                    >Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        class="transition duration-700 group-hover:stroke-white"
+                        d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
+                        stroke="#113D48"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="transition duration-700 group-hover:stroke-white"
+                        d="M3.5 12H20.33"
+                        stroke="#113D48"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </a>
+
+                  <!-- Animated div::Start -->
+                  <div
+                    class="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0"
+                  ></div>
+                  <!-- Animated div::End -->
                 </div>
               </div>
 
@@ -2213,14 +2302,14 @@
       </section>
       <!-- News & Article Section::End -->
     </main>
-    <!-- Main::end -->
+    <!-- Main Section::End -->
 
-    <!-- Footer::start -->
+    <!-- Footer::Start -->
     <footer class="bg-textColor py-14 text-white xl:py-28">
       <section class="container mx-auto">
         <!-- Footer Title::start -->
         <div
-          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:gap-0 xl:grid-cols-2"
+          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:grid-cols-2 lg:gap-0"
         >
           <div>
             <h2
@@ -2237,12 +2326,14 @@
               placeholder="Enter your Email"
               class="flex-1 rounded-[48px] px-3 py-2 font-inter text-textColor placeholder:font-inter placeholder:text-sm placeholder:text-[#6E7070] focus:outline-none xl:px-5 xl:py-4"
             />
+
             <div>
-              <a
+              <button
+                type="submit"
                 class="inline-flex cursor-pointer items-center gap-2 rounded-[48px] bg-primary px-4 py-2 font-inter text-sm text-white transition duration-500 hover:scale-105 md:gap-3 md:text-base xl:px-8 xl:py-4"
               >
                 Subscribe Now <img src="./assets/img/icons/plane.png" alt="" />
-              </a>
+              </button>
             </div>
           </form>
         </div>
@@ -2320,11 +2411,11 @@
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
-              <a href="#" class="text-sm lg:text-base">About Us</a>
+              <a href="about-us.html" class="text-sm lg:text-base">About Us</a>
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
-              <a href="#" class="text-sm lg:text-base">Services</a>
+              <a href="services.html" class="text-sm lg:text-base">Services</a>
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
@@ -2400,7 +2491,7 @@
         <!-- Footer Main Section::End -->
       </section>
     </footer>
-    <!-- Footer Last Section::Start -->
+
     <section
       class="font-inter text-white"
       style="
@@ -2423,8 +2514,6 @@
         </div>
       </div>
     </section>
-    <!-- Footer Last Section::End -->
-
     <!-- Footer::End -->
 
     <script src="./assets/js/jquery.js"></script>

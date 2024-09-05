@@ -180,6 +180,4 @@ $(document).ready(function () {
       }
     });
   }
-
-  // Filter Section::End
 });

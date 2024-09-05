@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
   </head>
-  <body class="tracking-tight">
+  <body>
     <header
       class="relative h-full overflow-hidden bg-cover bg-center bg-no-repeat 2xl:h-[60vh]"
       style="
@@ -48,10 +48,12 @@
               class="transition duration-300 hover:text-primary"
               >Best Deals</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a
+              href="about-us.html"
+              class="transition duration-300 hover:text-primary"
               >About Us</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a href="services.html" class="transition duration-300 hover:text-primary"
               >Services</a
             >
             <a href="#" class="transition duration-300 hover:text-primary"
@@ -72,7 +74,7 @@
               >Cart</a
             >
             <a
-              href=""
+              href="registration.html"
               class="rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105"
             >
               Login
@@ -114,8 +116,8 @@
                 <a href="index.html">Home</a>
                 <a href="destination.html" class="text-primary">Destination</a>
                 <a href="best-deals.html">Best Deals</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
                 <a href="">Blog</a>
               </div>
 
@@ -1548,12 +1550,12 @@
     </main>
     <!-- Main Section::End -->
 
-    <!-- Footer::Start -->
+<!-- Footer::Start -->
     <footer class="bg-textColor py-14 text-white xl:py-28">
       <section class="container mx-auto">
         <!-- Footer Title::start -->
         <div
-          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:gap-0 xl:grid-cols-2"
+          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:grid-cols-2 lg:gap-0"
         >
           <div>
             <h2
@@ -1562,7 +1564,7 @@
               get updated the latest newsletter
             </h2>
           </div>
-          <div class="flex flex-col gap-5 md:flex-row xl:items-center">
+          <form class="flex flex-col gap-5 md:flex-row xl:items-center">
             <input
               type="text"
               name=""
@@ -1570,14 +1572,16 @@
               placeholder="Enter your Email"
               class="flex-1 rounded-[48px] px-3 py-2 font-inter text-textColor placeholder:font-inter placeholder:text-sm placeholder:text-[#6E7070] focus:outline-none xl:px-5 xl:py-4"
             />
+
             <div>
-              <a
+              <button
+                type="submit"
                 class="inline-flex cursor-pointer items-center gap-2 rounded-[48px] bg-primary px-4 py-2 font-inter text-sm text-white transition duration-500 hover:scale-105 md:gap-3 md:text-base xl:px-8 xl:py-4"
               >
                 Subscribe Now <img src="./assets/img/icons/plane.png" alt="" />
-              </a>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
         <!-- Footer Title::End -->
 
@@ -1653,11 +1657,11 @@
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
-              <a href="#" class="text-sm lg:text-base">About Us</a>
+              <a href="about-us.html" class="text-sm lg:text-base">About Us</a>
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
-              <a href="#" class="text-sm lg:text-base">Services</a>
+              <a href="services.html" class="text-sm lg:text-base">Services</a>
             </div>
             <div class="flex items-center gap-4">
               <img src="./assets/img/footer/footer-arrow.png" alt="" />
@@ -1757,6 +1761,8 @@
       </div>
     </section>
     <!-- Footer::End -->
+
+
     <!-- Scritps::Start -->
 
     <script src="./assets/js/jquery.js"></script>
