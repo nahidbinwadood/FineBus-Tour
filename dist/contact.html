@@ -1,18 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinedBus Tour | Registration</title>
+    <title>FinedBus Tour | Contact Us</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/owl.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
   <body>
     <!-- Header::Start -->
-    <header>
+    <header
+      class="relative h-full overflow-hidden bg-cover bg-center bg-no-repeat 2xl:h-[60vh]"
+      style="
+        background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(&quot;./assets/img/best-deals/best-deals-background.png&quot;);
+      "
+    >
+      <!-- Navbar::start -->
       <div class="mx-5 pt-10 text-textColor md:mx-0">
         <div
           class="container mx-auto flex items-center justify-between rounded-xl bg-white px-4 py-2 md:h-24 xl:px-8"
@@ -28,9 +40,7 @@
           <div
             class="hidden items-center gap-5 font-inter xl:flex 2xl:gap-9 2xl:text-lg"
           >
-            <a href="index.html" class="text-primary transition duration-300"
-              >Home</a
-            >
+            <a href="index.html" class="transition duration-300">Home</a>
             <a
               href="destination.html"
               class="transition duration-300 hover:text-primary"
@@ -54,7 +64,9 @@
             <a href="#" class="transition duration-300 hover:text-primary"
               >Blog</a
             >
-            <a href="#" class="transition duration-300 hover:text-primary"
+            <a
+              href="contact.html"
+              class="text-primary transition duration-300 hover:text-primary"
               >Contact</a
             >
           </div>
@@ -69,7 +81,7 @@
               >Cart</a
             >
             <a
-              href=""
+              href="registration.html"
               class="rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105"
             >
               Login
@@ -113,6 +125,7 @@
                 <a href="best-deals.html">Best Deals</a>
                 <a href="about-us.html">About Us</a>
                 <a href="services.html">Services</a>
+                <a href="contact.html" class="text-primary">Contact</a>
                 <a href="">Blog</a>
               </div>
 
@@ -124,7 +137,7 @@
                 <a href="">Cart</a>
                 <div>
                   <a
-                    href="registration.html"
+                    href="#"
                     class="inline-block rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105 hover:text-textColor"
                   >
                     Login
@@ -140,103 +153,241 @@
         </div>
       </div>
       <!-- Navbar::End -->
+
+      <!-- Banner::start -->
+      <section
+        class="container mx-auto py-12 text-center font-poppins text-white 2xl:py-0 2xl:pt-40"
+      >
+        <h1 class="text-3xl font-semibold md:text-4xl lg:text-5xl 2xl:text-6xl">
+          Contact Us
+        </h1>
+        <div
+          class="mt-5 flex items-center justify-center text-center text-xl lg:ml-4"
+        >
+          <h3 class="mr-3 text-sm md:mr-5 md:text-base lg:text-xl">Home</h3>
+          <div class="mr-3 md:mr-6">
+            <img
+              class="size-5 lg:size-6"
+              src="./assets/img/destination/arrow-right.svg.svg"
+              alt=""
+            />
+          </div>
+          <h3 class="text-sm md:mr-5 md:text-base lg:text-xl">Contact Us</h3>
+        </div>
+      </section>
+      <!-- Banner::end -->
     </header>
     <!-- Header::End -->
 
-    <!-- Main::Start -->
-    <main class="min-h-[calc(100vh-858px)]">
-      <!-- Registration Section::Start -->
-      <section
-        class="container mx-auto mb-24 flex flex-col items-center justify-center md:mb-36 lg:mb-52 xl:mb-64 xl:mt-10"
-      >
+    <!-- Main Section::Start -->
+    <main>
+      <!-- Contact Information Section::Start -->
+      <section class="container mx-auto my-16 md:my-24 lg:my-28 xl:my-32">
         <!-- Title Section::Start -->
-        <div class="lg: mb-5 mt-10 text-center font-poppins md:mb-8 lg:mb-14">
-          <h2
-            class="mb-4 text-2xl font-medium tracking-tighter md:mb-6 md:text-3xl lg:text-4xl"
-          >
-            Create an account
+        <div class="space-y-3 text-center text-textColor">
+          <h2 class="font-arizonia text-2xl md:text-3xl lg:text-4xl">
+            Services We Offer
           </h2>
-          <h4 class="mb-2 text-sm md:text-xl">Let’s create your account</h4>
-          <div class="text-sm md:text-xl">
-            Already have an account?
-            <a href="#" class="text-[#FF5108]">Log In!</a>
-          </div>
+          <h2
+            class="font-poppins text-2xl font-semibold md:text-3xl lg:text-4xl"
+          >
+            Our Amazing Services
+          </h2>
         </div>
         <!-- Title Section::End -->
 
-        <!-- Form::Start -->
+        <!-- information::Start -->
         <div
-          class="mx-auto rounded-lg border border-black/40 px-6 py-8 font-poppins xl:px-16 xl:py-12"
+          class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-1 md:gap-8 lg:grid-cols-3 2xl:mt-12"
         >
-          <form>
-            <div class="mb-6 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
-              <input
-                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
-                id="username"
-                type="text"
-                placeholder="Username*"
-              />
-            </div>
-            <div class="mb-6 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
-              <input
-                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
-                id="username"
-                type="text"
-                placeholder="First name*"
-              />
-            </div>
-            <div class="mb-6 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
-              <input
-                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
-                id="username"
-                type="text"
-                placeholder="Last name*"
-              />
-            </div>
-            <div class="mb-6 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
-              <input
-                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
-                id="username"
-                type="text"
-                placeholder="Your email*"
-              />
-            </div>
-            <div class="mb-4 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
-              <input
-                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
-                id="username"
-                type="text"
-                placeholder="Confirm email*"
-              />
-            </div>
-            <p class="mb-4 text-sm text-black md:text-lg">
-              A password will be emailed to you.
-            </p>
-
-            <!-- Button::Start -->
-            <div class="flex w-full items-center justify-center pt-2 md:pt-5">
-              <a
-                href="#"
-                class="transtion inline-flex items-center rounded-md bg-primary py-3 pl-8 pr-6 font-poppins text-sm font-semibold text-white shadow-md duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-75 md:pr-8 md:text-base lg:pl-12 lg:pr-10"
+          <!-- 1st One::Start -->
+          <div
+            class="flex items-center gap-5 rounded-lg border border-black/50 px-4 py-5 font-poppins md:px-7 md:py-6 lg:mx-0 lg:py-8 2xl:pl-8 2xl:pr-16"
+          >
+            <div class="rounded-full bg-textColor p-3">
+              <svg
+                class="size-7 md:size-8"
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
               >
-                <span class="mr-2">Register</span>
-                <img
-                  src="./assets/img/icons/arrow-up.svg"
-                  alt="Arrow Icon"
-                  class="size-5 md:size-6"
+                <path
+                  d="M17.4443 33.0252L16.5431 32.2527C15.3008 31.2125 4.45312 21.844 4.45312 14.9912C4.45312 7.81637 10.2695 2 17.4443 2C24.6191 2 30.4355 7.81637 30.4355 14.9912C30.4355 21.8441 19.5878 31.2125 18.3506 32.2579L17.4443 33.0252ZM17.4443 4.80908C11.8236 4.81544 7.26862 9.37038 7.26226 14.9911C7.26226 19.2962 13.9362 26.1735 17.4443 29.3212C20.9525 26.1722 27.6264 19.291 27.6264 14.9911C27.62 9.37038 23.0651 4.8155 17.4443 4.80908Z"
+                  fill="white"
                 />
-                <input type="submit" class="hidden" />
-              </a>
+                <path
+                  d="M17.4426 20.139C14.5985 20.139 12.293 17.8335 12.293 14.9894C12.293 12.1454 14.5985 9.83984 17.4426 9.83984C20.2866 9.83984 22.5922 12.1454 22.5922 14.9894C22.5922 17.8335 20.2867 20.139 17.4426 20.139ZM17.4426 12.4146C16.0205 12.4146 14.8678 13.5674 14.8678 14.9894C14.8678 16.4114 16.0205 17.5642 17.4426 17.5642C18.8646 17.5642 20.0174 16.4114 20.0174 14.9894C20.0174 13.5674 18.8647 12.4146 17.4426 12.4146Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-            <!-- Button::End -->
-          </form>
-        </div>
+            <div class="space-y-2">
+              <h3 class="font-semibold md:text-lg">Our Address</h3>
+              <div class="text-sm md:text-base">
+                <p>2690 Hiltona Street Victoria Road, New York, USA</p>
+              </div>
+            </div>
+          </div>
+          <!-- 1st One::End -->
 
-        <!-- Form::End -->
+          <!-- 2nd One::Start -->
+          <div
+            class="flex items-center gap-5 rounded-lg border border-black/50 px-4 py-5 font-poppins md:px-7 md:py-6 lg:mx-0 lg:py-8 2xl:pl-8 2xl:pr-16"
+          >
+            <div class="rounded-full bg-textColor p-3">
+              <svg
+                class="size-7 md:size-8"
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <path
+                  d="M17.4443 33.0252L16.5431 32.2527C15.3008 31.2125 4.45312 21.844 4.45312 14.9912C4.45312 7.81637 10.2695 2 17.4443 2C24.6191 2 30.4355 7.81637 30.4355 14.9912C30.4355 21.8441 19.5878 31.2125 18.3506 32.2579L17.4443 33.0252ZM17.4443 4.80908C11.8236 4.81544 7.26862 9.37038 7.26226 14.9911C7.26226 19.2962 13.9362 26.1735 17.4443 29.3212C20.9525 26.1722 27.6264 19.291 27.6264 14.9911C27.62 9.37038 23.0651 4.8155 17.4443 4.80908Z"
+                  fill="white"
+                />
+                <path
+                  d="M17.4426 20.139C14.5985 20.139 12.293 17.8335 12.293 14.9894C12.293 12.1454 14.5985 9.83984 17.4426 9.83984C20.2866 9.83984 22.5922 12.1454 22.5922 14.9894C22.5922 17.8335 20.2867 20.139 17.4426 20.139ZM17.4426 12.4146C16.0205 12.4146 14.8678 13.5674 14.8678 14.9894C14.8678 16.4114 16.0205 17.5642 17.4426 17.5642C18.8646 17.5642 20.0174 16.4114 20.0174 14.9894C20.0174 13.5674 18.8647 12.4146 17.4426 12.4146Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-semibold md:text-lg">Our Address</h3>
+              <div class="text-sm md:text-base">
+                <p>2690 Hiltona Street Victoria Road, New York, USA</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd One::End -->
+
+          <!-- 3rd One::Start -->
+          <div
+            class="flex items-center gap-5 rounded-lg border border-black/50 px-4 py-5 font-poppins md:px-7 md:py-6 lg:mx-0 lg:py-8 2xl:pl-8 2xl:pr-16"
+          >
+            <div class="rounded-full bg-textColor p-3">
+              <svg
+                class="size-7 md:size-8"
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <path
+                  d="M17.4443 33.0252L16.5431 32.2527C15.3008 31.2125 4.45312 21.844 4.45312 14.9912C4.45312 7.81637 10.2695 2 17.4443 2C24.6191 2 30.4355 7.81637 30.4355 14.9912C30.4355 21.8441 19.5878 31.2125 18.3506 32.2579L17.4443 33.0252ZM17.4443 4.80908C11.8236 4.81544 7.26862 9.37038 7.26226 14.9911C7.26226 19.2962 13.9362 26.1735 17.4443 29.3212C20.9525 26.1722 27.6264 19.291 27.6264 14.9911C27.62 9.37038 23.0651 4.8155 17.4443 4.80908Z"
+                  fill="white"
+                />
+                <path
+                  d="M17.4426 20.139C14.5985 20.139 12.293 17.8335 12.293 14.9894C12.293 12.1454 14.5985 9.83984 17.4426 9.83984C20.2866 9.83984 22.5922 12.1454 22.5922 14.9894C22.5922 17.8335 20.2867 20.139 17.4426 20.139ZM17.4426 12.4146C16.0205 12.4146 14.8678 13.5674 14.8678 14.9894C14.8678 16.4114 16.0205 17.5642 17.4426 17.5642C18.8646 17.5642 20.0174 16.4114 20.0174 14.9894C20.0174 13.5674 18.8647 12.4146 17.4426 12.4146Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-semibold md:text-lg">Our Address</h3>
+              <div class="text-sm md:text-base">
+                <p>2690 Hiltona Street Victoria Road, New York, USA</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd One::End -->
+        </div>
+        <!-- information::End -->
       </section>
-      <!-- Registration Section::End -->
+      <!-- Contact Information Section::End -->
+
+      <!-- Contact Form Section::Start -->
+      <!-- Trip Plan Section::Start -->
+      <section class="h-full bg-primarybgColor py-14 xl:py-28">
+        <div class="container mx-auto">
+          <div
+            class="max-h-[680px] max-w-[650px] rounded-lg bg-white px-12 py-10 font-poppins"
+          >
+            <div class="pb-5">
+              <h2 class="text-3xl font-semibold">Book A Tour</h2>
+            </div>
+            <form class="h-[800px]" action="">
+              <div class="contact-form-first-name relative mb-8">
+                <input
+                  class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-[#848484] focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:pl-8 xl:pr-16"
+                  id="firstName"
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="contact-form-mail relative mb-8">
+                <input
+                  class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-[#848484] focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:pl-8 xl:pr-16"
+                  id="email"
+                  name="email"
+                  type="text"
+                  placeholder="Your mail"
+                />
+              </div>
+              <div class="contact-form-select mb-8 h-[58px]">
+                <select class="font-poppins">
+                  <option data-display="Select Tour Type" selected>
+                    Select Tour Type
+                  </option>
+                  <option value="Traveler">Price</option>
+                  <option value="Location">Location</option>
+                  <option value="Date">Date</option>
+                </select>
+              </div>
+
+              <div class="contact-form-comment relative">
+                <textarea
+                  class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-[#848484] focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:pl-8 xl:pr-16"
+                  id="email"
+                  name="email"
+                  type="text"
+                  rows="5"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <div class="mt-6">
+                <button
+                  type="submit"
+                  class="inline-flex cursor-pointer items-center gap-2 rounded-[48px] bg-textColor px-4 py-2 font-inter text-sm text-white transition duration-500 hover:scale-105 md:gap-3 md:text-base xl:px-8 xl:py-4"
+                >
+                  Send Message
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="26"
+                    viewBox="0 0 25 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.1805 4.05293C19.0025 1.70736 2.61929 7.4532 2.63282 9.551C2.64816 11.9299 9.0309 12.6617 10.8 13.1581C11.8639 13.4565 12.1488 13.7625 12.3941 14.8781C13.5051 19.9305 14.0629 22.4435 15.3342 22.4996C17.3606 22.5892 23.3061 6.342 21.1805 4.05293Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M11.6328 13.5L15.1328 10"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Trip Plan Section::End -->
+      <!-- Contact Form Section::End -->
     </main>
-    <!-- Main::End -->
+    <!-- Main Section::End -->
+
     <!-- Footer::Start -->
     <footer class="bg-textColor py-14 text-white xl:py-28">
       <section class="container mx-auto">
@@ -449,9 +600,11 @@
     </section>
     <!-- Footer::End -->
 
+    <!-- Scripts::Start -->
     <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <!-- Scripts::End -->
   </body>
 </html>

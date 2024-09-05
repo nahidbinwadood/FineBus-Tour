@@ -13,3 +13,48 @@
 #slider-container:hover .slider--content {
   animation-play-state: paused;
 }
+
+/* Contact Form::Start */
+.contact-form-first-name::after {
+  content: "";
+  background-image: url("../img/contact/user.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 40px; /* Adjust the positioning as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  pointer-events: none; /* To prevent the icon from interfering with input focus */
+}
+
+.contact-form-mail::after {
+  content: "";
+  background-image: url("../img/contact/direct-send.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 40px; /* Adjust the positioning as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  pointer-events: none; /* To prevent the icon from interfering with input focus */
+}
+
+
+.contact-form-comment::after {
+  content: "";
+  background-image: url("../img/contact/messages-3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 40px; /* Adjust the positioning as needed */
+  top: 20%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  pointer-events: none; /* To prevent the icon from interfering with input focus */
+}
+/* Contact Form::End */
