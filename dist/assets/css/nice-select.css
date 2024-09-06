@@ -231,13 +231,14 @@
 }
 
 .contact-form-select .nice-select:after {
-    height: 10px;
-    width: 10px;
-    right: 45px;
+  height: 10px;
+  width: 10px;
+  right: 45px;
 }
 /* Contact Form::End */
 @media (max-width: 1280px) {
-  .hero-filter .nice-select {
+  .hero-filter .nice-select,
+  .contact-form-select .nice-select {
     min-width: 100%;
   }
 }

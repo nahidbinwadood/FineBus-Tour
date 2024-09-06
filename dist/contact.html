@@ -301,26 +301,103 @@
       <!-- Contact Information Section::End -->
 
       <!-- Contact Form Section::Start -->
+
       <!-- Trip Plan Section::Start -->
-      <section class="h-full bg-primarybgColor py-14 xl:py-28">
-        <div class="container mx-auto">
-          <div
-            class="max-h-[680px] max-w-[650px] rounded-lg bg-white px-12 py-10 font-poppins"
+      <section class="relative h-[650px] w-full md:h-[850px] 2xl:h-[100vh]">
+        <!-- Video ::Start -->
+        <div>
+          <video
+            id="video"
+            class="absolute inset-0 h-[650px] w-full object-cover outline-none md:h-[850px] xl:h-full"
           >
-            <div class="pb-5">
-              <h2 class="text-3xl font-semibold">Book A Tour</h2>
+            <source
+              src="https://res.cloudinary.com/dgfpzdkqq/video/upload/v1725591232/iflbedxp9ykdn2cymxev.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <!-- Video ::End -->
+
+        <!-- shade::Start -->
+        <div
+          class="absolute inset-0 h-[650px] w-full bg-black/60 md:h-[850px] xl:h-full"
+        ></div>
+        <!-- shade::End -->
+
+        <!-- Play Btn::Start -->
+        <div
+          class="absolute left-[80%] top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 cursor-pointer md:block 2xl:left-[70%]"
+        >
+          <div id="play-btn" class="rounded-full bg-black/40 p-5 lg:p-8">
+            <svg
+              class="size-5 xl:size-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_9136_4547)">
+                <path
+                  d="M11.0631 1.14656C6.37503 -1.5426 2.57422 0.660392 2.57422 6.06314V45.9331C2.57422 51.3412 6.37503 53.5413 11.0631 50.8547L45.9114 30.8695C50.6011 28.1794 50.6011 23.821 45.9114 21.1315L11.0631 1.14656Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_9136_4547">
+                  <rect width="52" height="52" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div
+            id="pause-btn"
+            class="hidden rounded-full bg-black/40 p-5 lg:p-8"
+          >
+            <svg
+              class="size-5 xl:size-8"
+              xmlns="http://www.w3.org/2000/svg"
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_9136_4548)">
+                <rect x="12" y="10" width="10" height="32" fill="white" />
+                <rect x="30" y="10" width="10" height="32" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_9136_4548">
+                  <rect width="52" height="52" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <!-- Play Btn::End -->
+
+        <!-- Form::Start -->
+
+        <div
+          class="container absolute left-1/2 top-1/2 mx-auto -translate-x-1/2 -translate-y-1/2 xl:left-36 xl:top-24 xl:h-full xl:translate-x-0 xl:translate-y-0 2xl:top-36"
+        >
+          <div
+            class="rounded-lg bg-white px-8 py-8 font-poppins md:w-[450px] md:px-12 md:py-10 lg:w-[600px] 2xl:w-[650px]"
+          >
+            <div class="pb-4 md:pb-5">
+              <h2 class="text-xl font-semibold md:text-3xl">Book A Tour</h2>
             </div>
-            <form class="h-[800px]" action="">
-              <div class="contact-form-first-name relative mb-8">
+            <form class="" action="">
+              <div class="contact-form-first-name relative mb-4 md:mb-8">
                 <input
-                  class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-[#848484] focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:pl-8 xl:pr-16"
+                  class="focus:shadow-outline w-full appearance-none rounded-lg border py-4 pl-4 pr-14 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-[#848484] focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:pl-8 xl:pr-16"
                   id="firstName"
                   type="text"
                   name="first-name"
                   placeholder="First Name"
                 />
               </div>
-              <div class="contact-form-mail relative mb-8">
+              <div class="contact-form-mail relative mb-4 md:mb-8">
                 <input
                   class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-[#848484] focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:pl-8 xl:pr-16"
                   id="email"
@@ -329,7 +406,7 @@
                   placeholder="Your mail"
                 />
               </div>
-              <div class="contact-form-select mb-8 h-[58px]">
+              <div class="contact-form-select mb-4 h-[58px] md:mb-8">
                 <select class="font-poppins">
                   <option data-display="Select Tour Type" selected>
                     Select Tour Type
@@ -351,7 +428,7 @@
                 ></textarea>
               </div>
 
-              <div class="mt-6">
+              <div class="mt-3 md:mt-6">
                 <button
                   type="submit"
                   class="inline-flex cursor-pointer items-center gap-2 rounded-[48px] bg-textColor px-4 py-2 font-inter text-sm text-white transition duration-500 hover:scale-105 md:gap-3 md:text-base xl:px-8 xl:py-4"
@@ -382,9 +459,28 @@
             </form>
           </div>
         </div>
+        <!-- Form::End -->
       </section>
       <!-- Trip Plan Section::End -->
+
       <!-- Contact Form Section::End -->
+
+      <!-- Map Section::Start -->
+      <section>
+        <div >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9123.302805312893!2d-99.18595601400524!3d19.424218314529313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fec9680ec61f%3A0xeb46405e21012819!2sTorre%20Mayor!5e0!3m2!1sen!2sbd!4v1725600495162!5m2!1sen!2sbd"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="w-full 2xl:min-h-[700px]"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Map Section::End -->
     </main>
     <!-- Main Section::End -->
 

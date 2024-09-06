@@ -43,7 +43,6 @@
   pointer-events: none; /* To prevent the icon from interfering with input focus */
 }
 
-
 .contact-form-comment::after {
   content: "";
   background-image: url("../img/contact/messages-3.svg");
@@ -57,4 +56,33 @@
   height: 20px; /* Adjust size */
   pointer-events: none; /* To prevent the icon from interfering with input focus */
 }
+
 /* Contact Form::End */
+
+/* ====Responsive::Start==== */
+
+@media (max-width: 640px) {
+  .contact-form-first-name::after,
+  .contact-form-comment::after,
+  .contact-form-mail::after {
+    right: 30px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact-form-select .nice-select {
+    height: 53px;
+    line-height: 53px;
+  }
+  .contact-form-select .nice-select,
+  .contact-form-select .nice-select .list {
+    font-size: 14px;
+  }
+  .contact-form-select .nice-select:after {
+    height: 8px;
+    width: 8px;
+    right: 35px;
+  }
+}
+
+/* ====Responsive::End==== */

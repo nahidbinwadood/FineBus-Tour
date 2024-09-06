@@ -180,4 +180,35 @@ $(document).ready(function () {
       }
     });
   }
+  // Filter Section::End
+
+  // Play Video::Start
+  const video = document.getElementById("video");
+  const play = document.getElementById("play-btn");
+  const pause = document.getElementById("pause-btn");
+  const screen=window.innerWidth;
+
+  play?.addEventListener("click", () => {
+    video.play();
+    play.classList.add("hidden");
+    pause.classList.remove("hidden");
+    video.setAttribute("loop", "");
+  });
+  pause?.addEventListener("click", () => {
+    video.pause();
+    play.classList.remove("hidden");
+    pause.classList.add("hidden");
+    video.removeAttribute("loop", "");
+  });
+
+  if(screen){
+    if(screen>319 && screen<768){
+      video.play();
+      video.setAttribute("loop", "");
+    }else if(screen>767){
+      video.pause();
+      video.removeAttribute("loop", "");
+    }
+  }
+  // Play Video::End
 });
