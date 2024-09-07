@@ -59,8 +59,29 @@
 
 /* Contact Form::End */
 
-/* ====Responsive::Start==== */
+/*====Accordion==== */
+#content,
+#content-beach,
+#content-city,
+#content-mountain,
+#content-news {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+/*====Accordion==== */
 
+/* ====Responsive::Start==== */
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  footer .footer--form input {
+    max-width: 250px;
+  }
+}
+@media (min-width: 479px) {
+  footer .footer--form {
+    flex-direction: row;
+  }
+}
 @media (max-width: 640px) {
   .contact-form-first-name::after,
   .contact-form-comment::after,

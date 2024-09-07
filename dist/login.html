@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinedBus Tour | Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+  </head>
+  <body>
+    <!-- Header::Start -->
+    <header>
+      <div class="mx-5 pt-10 text-textColor md:mx-0">
+        <div
+          class="container mx-auto flex items-center justify-between rounded-xl bg-white px-4 py-2 md:h-24 xl:px-8"
+        >
+          <div>
+            <img
+              class="mt-2 h-12 md:h-[70px] md:w-20"
+              src="./assets/img/logo.png"
+              alt=""
+            />
+          </div>
+          <!-- NavLinks::start -->
+          <div
+            class="hidden items-center gap-5 font-inter xl:flex 2xl:gap-9 2xl:text-lg"
+          >
+            <a href="index.html" class="text-primary transition duration-300"
+              >Home</a
+            >
+            <a
+              href="destination.html"
+              class="transition duration-300 hover:text-primary"
+              >Destinations</a
+            >
+            <a
+              href="best-deals.html"
+              class="transition duration-300 hover:text-primary"
+              >Best Deals</a
+            >
+            <a
+              href="about-us.html"
+              class="transition duration-300 hover:text-primary"
+              >About Us</a
+            >
+            <a
+              href="services.html"
+              class="transition duration-300 hover:text-primary"
+              >Services</a
+            >
+            <a href="#" class="transition duration-300 hover:text-primary"
+              >Blog</a
+            >
+            <a href="#" class="transition duration-300 hover:text-primary"
+              >Contact</a
+            >
+          </div>
+          <!-- NavLinks::end -->
+
+          <!-- Navlinks with button::start -->
+          <div class="hidden items-center gap-5 font-inter xl:flex 2xl:text-lg">
+            <a href="" class="transition duration-300 hover:text-primary"
+              >Track Order</a
+            >
+            <a href="" class="transition duration-300 hover:text-primary"
+              >Cart</a
+            >
+            <a
+              href=""
+              class="rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105"
+            >
+              Login
+            </a>
+          </div>
+
+          <!-- Navbar Responsive::start -->
+          <div
+            id="hamburger"
+            class="rounded-md bg-primary px-4 py-2 text-white xl:hidden"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div
+            id="close--menu"
+            class="hidden rounded-md bg-primary px-4 py-2 text-white"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div
+            id="overlay"
+            class="fixed inset-0 hidden bg-gray-900 bg-opacity-50 transition-opacity"
+          ></div>
+
+          <!-- Sidebar ::start -->
+
+          <div
+            id="sidebar"
+            class="fixed left-0 top-0 z-20 h-full w-60 -translate-x-full transform overflow-y-scroll bg-white transition-transform duration-500 md:w-64"
+          >
+            <div class="pb-4 pt-12">
+              <img class="mx-auto" src="./assets/img/logo.png" alt="" />
+            </div>
+
+            <!-- NavLinks ::start -->
+
+            <div class="py-4 pl-10 font-inter text-sm">
+              <div class="flex flex-col justify-center gap-4">
+                <a href="index.html">Home</a>
+                <a href="destination.html">Destination</a>
+                <a href="best-deals.html">Best Deals</a>
+                <a href="about-us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="">Blog</a>
+              </div>
+
+              <!-- Horizontal Line ::start -->
+              <div class="my-4 mr-8 border bg-gray-200"></div>
+              <!-- Horizontal Line ::end -->
+              <div class="mt-4 flex flex-col justify-center gap-4">
+                <a href="">Track Order</a>
+                <a href="">Cart</a>
+                <div>
+                  <a
+                    href="registration.html"
+                    class="inline-block rounded-md bg-primary px-12 py-3 text-white transition-all duration-300 hover:scale-105 hover:text-textColor"
+                  >
+                    Login
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- NavLinks ::end -->
+          </div>
+          <!-- Sidebar ::start -->
+          <!-- Navbar Responsive::end -->
+          <!-- Navlinks with button::end -->
+        </div>
+      </div>
+      <!-- Navbar::End -->
+    </header>
+    <!-- Header::End -->
+
+    <!-- Main::Start -->
+    <main class="min-h-[calc(100vh-858px)]">
+      <!-- Registration Section::Start -->
+      <section
+        class="container mx-auto mb-24 flex flex-col items-center justify-center md:mb-36 lg:mb-52 xl:mb-64 xl:mt-10"
+      >
+        <!-- Title Section::Start -->
+        <div class="lg: mb-5 mt-10 text-center font-poppins md:mb-8 lg:mb-14">
+          <h2
+            class="mb-4 text-2xl font-medium tracking-tighter md:mb-6 md:text-3xl lg:text-4xl"
+          >
+            Login to your account
+          </h2>
+          <h4 class="mb-2 text-sm md:text-xl">
+            Welcome back! Please enter your details.
+          </h4>
+          <div class="text-sm md:text-xl">
+            Don't have an account ?
+            <a href="registration.html" class="text-[#FF5108]">Sign UP!</a>
+          </div>
+        </div>
+        <!-- Title Section::End -->
+
+        <!-- Form::Start -->
+        <div
+          class="mx-auto rounded-lg border border-black/40 px-6 py-8 font-poppins xl:px-16 xl:py-12"
+        >
+          <form>
+            <div class="mb-6 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
+              <input
+                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
+                id="username"
+                type="email"
+                placeholder="Enter Your email*"
+                required
+              />
+            </div>
+            <div class="mb-6 w-full md:w-[400px] lg:w-[500px] xl:w-[600px]">
+              <input
+                class="focus:shadow-outline w-full appearance-none rounded-lg border px-4 py-4 text-sm leading-tight text-textColor placeholder:text-sm placeholder:text-black focus:outline-none md:px-8 md:text-base md:placeholder:text-base xl:px-12"
+                id="username"
+                type="password"
+                placeholder="Enter Your Password*"
+                required
+              />
+            </div>
+
+            <p class="mb-4 text-sm text-black md:text-lg">
+              Forgot Your Password?
+            </p>
+
+            <!-- Button::Start -->
+            <a
+              href="#"
+              class="transtion mt-6 flex items-center justify-center rounded-md bg-primary py-3 pl-8 pr-6 font-poppins text-sm text-white shadow-md duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-75 md:mt-10 md:pr-8 md:text-base lg:mt-12 lg:pl-12 lg:pr-10"
+            >
+              <span class="mr-2">Login</span>
+              <img
+                src="./assets/img/icons/arrow-up.svg"
+                alt="Arrow Icon"
+                class="size-5 md:size-6"
+              />
+              <input type="submit" class="hidden" />
+            </a>
+            <!-- Button::End -->
+          </form>
+        </div>
+
+        <!-- Form::End -->
+      </section>
+      <!-- Registration Section::End -->
+    </main>
+    <!-- Main::End -->
+
+    <!-- Footer::Start -->
+    <footer class="bg-textColor py-14 text-white xl:py-28">
+      <section class="container mx-auto">
+        <!-- Footer Title::start -->
+        <div
+          class="grid grid-cols-1 gap-8 border-b border-b-[#E1E4E6] pb-12 lg:grid-cols-2 lg:gap-0"
+        >
+          <div>
+            <h2
+              class="font-manrope text-2xl font-semibold capitalize leading-snug md:text-3xl lg:text-4xl xl:w-2/3"
+            >
+              get updated the latest newsletter
+            </h2>
+          </div>
+          <form
+            class="footer--form flex flex-col gap-5 md:flex-row xl:items-center"
+          >
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your Email"
+              class="flex-1 rounded-[48px] px-3 py-2 font-inter text-textColor placeholder:font-inter placeholder:text-sm placeholder:text-[#6E7070] focus:outline-none lg:h-[45px] xl:h-auto xl:px-5 xl:py-4"
+            />
+
+            <div>
+              <button
+                type="submit"
+                class="inline-flex cursor-pointer items-center gap-2 rounded-[48px] bg-primary px-4 py-2 font-inter text-sm text-white transition duration-500 hover:scale-105 md:gap-3 md:text-base xl:px-8 xl:py-4"
+              >
+                Subscribe Now <img src="./assets/img/icons/plane.png" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Footer Title::End -->
+
+        <!-- Footer Main Section::Start -->
+        <div
+          class="grid grid-cols-1 items-center justify-center gap-8 pt-12 md:grid-cols-2 md:gap-12 lg:px-16 xl:grid-cols-12"
+        >
+          <div class="xl:col-span-4">
+            <div>
+              <img src="./assets/img/footer/footerlogo.png" alt="" />
+            </div>
+            <div>
+              <p class="font-inter text-sm leading-6 lg:text-base">
+                Rapidiously myocardinate cross-platform intellectual capital
+                model. Appropriately create interactive infrastructures
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-5">
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <a target="_blank" href="https://www.facebook.com/"
+                  ><img
+                    src="./assets/img/footer/social-icons/round-facebook.png"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <a target="_blank" href="https://x.com/?lang=en&mx=2"
+                  ><img
+                    src="./assets/img/footer/social-icons/twitter.png"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <a target="_blank" href="https://www.linkedin.com/feed/"
+                  ><img
+                    src="./assets/img/footer/social-icons/linkedin.png"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <a target="_blank" href="https://web.whatsapp.com/"
+                  ><img
+                    src="./assets/img/footer/social-icons/whatsapp.png"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    src="./assets/img/footer/social-icons/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Section::Start -->
+
+          <div class="space-y-4 font-inter xl:col-span-2 xl:mt-12">
+            <div class="flex items-center gap-4">
+              <img src="./assets/img/footer/footer-arrow.png" alt="" />
+              <a href="index.html" class="text-sm lg:text-base">Home</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./assets/img/footer/footer-arrow.png" alt="" />
+              <a href="about-us.html" class="text-sm lg:text-base">About Us</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./assets/img/footer/footer-arrow.png" alt="" />
+              <a href="services.html" class="text-sm lg:text-base">Services</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./assets/img/footer/footer-arrow.png" alt="" />
+              <a href="#" class="text-sm lg:text-base">Tour Guide</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./assets/img/footer/footer-arrow.png" alt="" />
+              <a href="contact.html" class="text-sm lg:text-base">Contact Us</a>
+            </div>
+          </div>
+          <!-- 2nd Section::End -->
+
+          <!-- 3rd Section::Start -->
+          <div class="space-y-5 xl:col-span-3 xl:mt-12">
+            <div class="flex items-center gap-3 font-inter">
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <img src="./assets/img/footer/icons/phone-image.png" alt="" />
+              </div>
+              <div class="flex flex-col space-y-2 tracking-normal">
+                <a href="tel:+0134567890" class="text-sm 2xl:text-base"
+                  >+01 234 567 890</a
+                >
+                <a href="tel:+09876543210" class="text-sm 2xl:text-base"
+                  >+09 876 543 210</a
+                >
+              </div>
+            </div>
+            <div class="flex items-center gap-3 font-inter">
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <img src="./assets/img/footer/icons/mail.png" alt="" />
+              </div>
+              <div class="flex flex-col space-y-2 tracking-normal">
+                <a
+                  href="mailto:mailinfo00@tourm.com"
+                  class="text-sm 2xl:text-base"
+                  >mailinfo00@tourm.com</a
+                >
+                <a
+                  href="mailto:support24@tourm.com"
+                  class="text-sm 2xl:text-base"
+                  >support24@tourm.com</a
+                >
+              </div>
+            </div>
+            <div class="flex items-center gap-3 font-inter">
+              <div
+                class="cursor-pointer transition duration-300 hover:scale-105"
+              >
+                <img src="./assets/img/footer/icons/location.png" alt="" />
+              </div>
+              <div class="flex flex-col space-y-2 tracking-normal">
+                <a href="#" class="text-sm 2xl:text-base"
+                  >789 Inner Lane, Holy park,</a
+                >
+                <a href="#" class="text-sm 2xl:text-base">California, USA</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd Section::End -->
+
+          <!-- 4th Section::Start -->
+          <div class="xl:col-span-3 xl:mt-12">
+            <div>
+              <img src="./assets/img/footer/Container.png" alt="" />
+            </div>
+          </div>
+          <!-- 4th Section::End -->
+        </div>
+        <!-- Footer Main Section::End -->
+      </section>
+    </footer>
+
+    <section
+      class="font-inter text-white"
+      style="
+        background-image: url(&quot;./assets/img/footer/footer-bg.png&quot;);
+      "
+    >
+      <div
+        class="container mx-auto flex items-center justify-between py-4 xl:px-16"
+      >
+        <div>
+          <h5 class="text-xs md:text-sm">
+            Copyright 2024 Tourm.All Rights Reserved.
+          </h5>
+        </div>
+        <div class="flex items-center gap-3">
+          <h5 class="font-roboto text-xs md:text-base">We Accept</h5>
+          <div>
+            <img src="./assets/img/footer/cards.png.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer::End -->
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
